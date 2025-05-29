@@ -1,30 +1,40 @@
-# Cs student website
+Tej Suklikar’s Portfolio
+Welcome to my personal portfolio—a space where I showcase my latest work, technical skills, and the projects I’ve brought to life. Thanks for stopping by.
 
-*Automatically synced with your [v0.dev](https://v0.dev) deployments*
+About Me
+Hi, I'm Tej Suklikar. I’m passionate about using technology to create effective, real-world solutions that drive meaningful impact. Outside of coding, I enjoy soccer, golf, working out, and spending time with my dog, Beau.
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/tej-suklikars-projects-0d4992dc/v0-cs-student-website)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/projects/haigh1kTqow)
+About This Website
+This site offers a comprehensive view of my professional journey and the work I’ve done. Built with modern web technologies, it includes:
 
-## Overview
+Responsive Design: Optimized for seamless viewing across all devices.
 
-This repository will stay in sync with your deployed chats on [v0.dev](https://v0.dev).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.dev](https://v0.dev).
+Interactive Features: Smooth transitions and animations for an engaging experience.
 
-## Deployment
+Project Portfolio: Detailed breakdowns of my projects, including the technologies used and the challenges addressed.
 
-Your project is live at:
+Technologies Used
+Frontend: React, Next.js
 
-**[https://vercel.com/tej-suklikars-projects-0d4992dc/v0-cs-student-website](https://vercel.com/tej-suklikars-projects-0d4992dc/v0-cs-student-website)**
+Styling: Tailwind CSS
 
-## Build your app
+Deployment: Vercel
 
-Continue building your app on:
+Skills
+Languages: TypeScript, JavaScript, CSS
 
-**[https://v0.dev/chat/projects/haigh1kTqow](https://v0.dev/chat/projects/haigh1kTqow)**
+Frameworks: React, Next.js, Tailwind CSS
 
-## How It Works
+Tools: Git, Vercel, Node.js
 
-1. Create and modify your project using [v0.dev](https://v0.dev)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+Get in Touch
+I'm always open to connecting and discussing new opportunities. You can reach me here:
+
+Email: anitej@suklikar.org
+
+LinkedIn: linkedin.com/in/tej-suklikar
+
+GitHub: github.com/TejSuklikar
+
+Website: tejsuklikar.vercel.app
+
