@@ -233,12 +233,12 @@ export default function Portfolio() {
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-black/90 backdrop-blur-sm border-b border-blue-600/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-center space-x-8 py-4">
+          <div className="flex justify-center space-x-2 sm:space-x-4 lg:space-x-8 py-3 sm:py-4 overflow-x-auto">
             {navItems.map((item) => (
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className={`px-4 py-2 rounded-md transition-all duration-300 font-medium ${
+                className={`px-2 sm:px-3 lg:px-4 py-2 rounded-md transition-all duration-300 font-medium text-sm sm:text-base whitespace-nowrap ${
                   activeSection === item.id
                     ? "bg-blue-600 text-white font-semibold"
                     : "text-gray-300 hover:text-blue-300 hover:bg-blue-600/10"
@@ -253,31 +253,31 @@ export default function Portfolio() {
 
       {/* Home Section */}
       <section id="home" className="min-h-screen flex items-center justify-center px-4 pt-20">
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-start">
-          <div className="text-center md:text-left">
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 tracking-tight font-heading">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 lg:gap-12 items-start">
+          <div className="text-center md:text-left order-2 md:order-1">
+            <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold mb-4 sm:mb-6 tracking-tight font-heading">
               Hello! I'm <span className="text-blue-300">Tej</span>
             </h1>
-            <p className="text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed font-light">
+            <p className="text-lg sm:text-xl lg:text-2xl text-gray-300 mb-6 sm:mb-8 leading-relaxed font-light">
               I'm a Computer Science and Linguistics student at the University of Maryland, passionate about developing
               innovative software solutions. I focus on leveraging AI, Machine Learning, and Data Science to solve
               complex problems across various industries. I'm eager to explore new ways AI can be applied across
               different fields, uncovering innovative solutions and pushing technological boundaries.
             </p>
-            <div className="flex items-center justify-center md:justify-start space-x-2 text-blue-300 mb-8">
-              <MapPin className="w-5 h-5" />
-              <span className="font-medium">San Francisco, CA</span>
+            <div className="flex items-center justify-center md:justify-start space-x-2 text-blue-300 mb-6 sm:mb-8">
+              <MapPin className="w-4 h-4 sm:w-5 sm:h-5" />
+              <span className="font-medium text-sm sm:text-base">San Francisco, CA</span>
             </div>
             <Button
               onClick={() => scrollToSection("contact")}
-              className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-3 rounded-lg font-heading"
+              className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 sm:px-8 py-2 sm:py-3 rounded-lg font-heading text-sm sm:text-base"
             >
               Get In Touch
             </Button>
           </div>
-          <div className="flex justify-center mt-8 md:mt-16">
+          <div className="flex justify-center order-1 md:order-2 mt-4 sm:mt-8 md:mt-16">
             <div className="relative">
-              <div className="w-80 h-80 rounded-full overflow-hidden border-4 border-blue-600/30 shadow-2xl">
+              <div className="w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 rounded-full overflow-hidden border-4 border-blue-600/30 shadow-2xl">
                 <img
                   src="/profile-photo.jpeg"
                   alt="Tej Suklikar"
@@ -292,20 +292,20 @@ export default function Portfolio() {
       </section>
 
       {/* Experience Section */}
-      <section id="experience" className="py-14 px-4">
+      <section id="experience" className="py-10 sm:py-14 px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 tracking-tight font-heading">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-center mb-12 sm:mb-16 tracking-tight font-heading">
             <span className="text-blue-300">Experience</span>
           </h2>
-          <div className="space-y-8">
+          <div className="space-y-6 sm:space-y-8">
             {experiences.map((exp, index) => (
               <Card
                 key={index}
                 className="bg-gray-900/50 border-blue-600/20 hover:border-blue-600/40 transition-all duration-300"
               >
                 <CardHeader>
-                  <div className="flex items-start space-x-4">
-                    <div className="w-16 h-16 rounded-md overflow-hidden flex items-center justify-center p-2">
+                  <div className="flex flex-col sm:flex-row items-start space-y-4 sm:space-y-0 sm:space-x-4">
+                    <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-md overflow-hidden flex items-center justify-center p-2 mx-auto sm:mx-0">
                       <img
                         src={exp.logo || "/placeholder.svg"}
                         alt={`${exp.company} logo`}
@@ -313,8 +313,10 @@ export default function Portfolio() {
                         style={exp.company === "Decision Factories" ? { filter: "brightness(0) invert(1)" } : {}}
                       />
                     </div>
-                    <div className="flex-1">
-                      <CardTitle className="text-xl text-white font-semibold font-heading">{exp.title}</CardTitle>
+                    <div className="flex-1 text-center sm:text-left">
+                      <CardTitle className="text-lg sm:text-xl text-white font-semibold font-heading">
+                        {exp.title}
+                      </CardTitle>
                       <CardDescription className="text-blue-300 font-medium font-heading">
                         {exp.website ? (
                           <button
@@ -327,17 +329,17 @@ export default function Portfolio() {
                           exp.company
                         )}
                       </CardDescription>
-                      <div className="flex items-center space-x-4 mt-2 text-gray-400">
+                      <div className="flex flex-col sm:flex-row items-center justify-center sm:justify-start space-y-1 sm:space-y-0 sm:space-x-4 mt-2 text-gray-400">
                         {exp.location && (
                           <div className="flex items-center space-x-1">
-                            <MapPin className="w-4 h-4" />
-                            <span className="text-sm">{exp.location}</span>
+                            <MapPin className="w-3 h-3 sm:w-4 sm:h-4" />
+                            <span className="text-xs sm:text-sm">{exp.location}</span>
                           </div>
                         )}
                         {exp.period && (
                           <div className="flex items-center space-x-1">
-                            <Calendar className="w-4 h-4" />
-                            <span className="text-sm">{exp.period}</span>
+                            <Calendar className="w-3 h-3 sm:w-4 sm:h-4" />
+                            <span className="text-xs sm:text-sm">{exp.period}</span>
                           </div>
                         )}
                       </div>
@@ -345,10 +347,10 @@ export default function Portfolio() {
                   </div>
                 </CardHeader>
                 <CardContent>
-                  <ul className="space-y-3">
+                  <ul className="space-y-2 sm:space-y-3">
                     {exp.description.map((item, i) => (
-                      <li key={i} className="text-gray-300 flex items-start leading-relaxed">
-                        <span className="text-blue-300 mr-3 mt-1">•</span>
+                      <li key={i} className="text-gray-300 flex items-start leading-relaxed text-sm sm:text-base">
+                        <span className="text-blue-300 mr-2 sm:mr-3 mt-1">•</span>
                         <span className="font-light">{item}</span>
                       </li>
                     ))}
@@ -361,12 +363,12 @@ export default function Portfolio() {
       </section>
 
       {/* Projects Section */}
-      <section id="projects" className="py-14 px-4 bg-gray-900/30">
+      <section id="projects" className="py-10 sm:py-14 px-4 bg-gray-900/30">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 tracking-tight font-heading">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-center mb-12 sm:mb-16 tracking-tight font-heading">
             <span className="text-blue-300">Projects</span>
           </h2>
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
             {projects.map((project, index) => (
               <Card
                 key={index}
@@ -374,7 +376,7 @@ export default function Portfolio() {
               >
                 <CardHeader>
                   <div className="flex items-center justify-between">
-                    <div className="text-4xl">{project.icon}</div>
+                    <div className="text-3xl sm:text-4xl">{project.icon}</div>
                     <div className="flex space-x-2">
                       <Button
                         size="sm"
@@ -382,24 +384,31 @@ export default function Portfolio() {
                         className="text-blue-300 hover:text-blue-300"
                         onClick={() => window.open(project.demo, "_blank")}
                       >
-                        <ExternalLink className="w-4 h-4" />
+                        <ExternalLink className="w-3 h-3 sm:w-4 sm:h-4" />
                       </Button>
                     </div>
                   </div>
-                  <Badge variant="outline" className="text-blue-300 border-blue-600/30 w-fit font-medium">
+                  <Badge
+                    variant="outline"
+                    className="text-blue-300 border-blue-600/30 w-fit font-medium text-xs sm:text-sm"
+                  >
                     {project.category}
                   </Badge>
-                  <CardTitle className="text-xl text-white group-hover:text-blue-300 transition-colors font-semibold font-heading">
+                  <CardTitle className="text-lg sm:text-xl text-white group-hover:text-blue-300 transition-colors font-semibold font-heading">
                     {project.title}
                   </CardTitle>
-                  <CardDescription className="text-gray-300 font-light leading-relaxed">
+                  <CardDescription className="text-gray-300 font-light leading-relaxed text-sm sm:text-base">
                     {project.description}
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="flex flex-wrap gap-2">
                     {project.technologies.map((tech, i) => (
-                      <Badge key={i} variant="secondary" className="bg-blue-600/10 text-blue-300 font-medium">
+                      <Badge
+                        key={i}
+                        variant="secondary"
+                        className="bg-blue-600/10 text-blue-300 font-medium text-xs sm:text-sm"
+                      >
                         {tech}
                       </Badge>
                     ))}
@@ -412,36 +421,38 @@ export default function Portfolio() {
       </section>
 
       {/* Skills Section */}
-      <section id="skills" className="py-14 px-4">
+      <section id="skills" className="py-10 sm:py-14 px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 tracking-tight font-heading">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-center mb-12 sm:mb-16 tracking-tight font-heading">
             <span className="text-blue-300">Skills</span>
           </h2>
-          <div className="space-y-12">
+          <div className="space-y-8 sm:space-y-12">
             {skillCategories.map((category, categoryIndex) => (
               <div key={categoryIndex}>
-                <h3 className="text-2xl font-semibold text-blue-300 mb-6 text-center font-heading">{category.title}</h3>
-                <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
+                <h3 className="text-xl sm:text-2xl font-semibold text-blue-300 mb-4 sm:mb-6 text-center font-heading">
+                  {category.title}
+                </h3>
+                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 sm:gap-4">
                   {category.skills.map((skill, index) => (
                     <Card
                       key={index}
                       className="bg-gray-900/50 border-blue-600/20 hover:border-blue-600/40 transition-all duration-300 hover:scale-105"
                     >
-                      <CardContent className="p-4 text-center">
+                      <CardContent className="p-3 sm:p-4 text-center">
                         {typeof skill.icon === "string" && skill.icon.startsWith("/") ? (
-                          <div className="h-16 w-16 mx-auto flex items-center justify-center mb-3 p-2">
+                          <div className="h-12 w-12 sm:h-16 sm:w-16 mx-auto flex items-center justify-center mb-2 sm:mb-3 p-1 sm:p-2">
                             <img
                               src={skill.icon || "/placeholder.svg"}
                               alt={`${skill.name} logo`}
-                              className="max-h-12 max-w-12 object-contain"
+                              className="max-h-8 max-w-8 sm:max-h-12 sm:max-w-12 object-contain"
                             />
                           </div>
                         ) : (
-                          <div className="h-16 w-16 mx-auto flex items-center justify-center mb-3 text-4xl">
+                          <div className="h-12 w-12 sm:h-16 sm:w-16 mx-auto flex items-center justify-center mb-2 sm:mb-3 text-2xl sm:text-4xl">
                             {skill.icon}
                           </div>
                         )}
-                        <p className="text-white font-medium text-sm">{skill.name}</p>
+                        <p className="text-white font-medium text-xs sm:text-sm">{skill.name}</p>
                       </CardContent>
                     </Card>
                   ))}
@@ -453,41 +464,41 @@ export default function Portfolio() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-14 px-4 bg-gray-900/30">
+      <section id="contact" className="py-10 sm:py-14 px-4 bg-gray-900/30">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-8 tracking-tight font-heading">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 sm:mb-8 tracking-tight font-heading">
             <span className="text-blue-300">Get In Touch</span>
           </h2>
-          <p className="text-xl text-gray-300 mb-12 max-w-2xl mx-auto font-light leading-relaxed">
+          <p className="text-lg sm:text-xl text-gray-300 mb-8 sm:mb-12 max-w-2xl mx-auto font-light leading-relaxed">
             I'm always open to discussing new opportunities, interesting projects, or just having a chat about
             technology. Feel free to reach out!
           </p>
-          <div className="flex justify-center space-x-6">
+          <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
             <Button
               variant="outline"
               size="lg"
-              className="border-blue-600/30 text-blue-300 hover:bg-blue-600/10 hover:border-blue-600 font-medium font-heading"
+              className="border-blue-600/30 text-blue-300 hover:bg-blue-600/10 hover:border-blue-600 font-medium font-heading text-sm sm:text-base"
               onClick={() => window.open("mailto:anitej@suklikar.org")}
             >
-              <Mail className="w-5 h-5 mr-2" />
+              <Mail className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
               Email Me
             </Button>
             <Button
               variant="outline"
               size="lg"
-              className="border-blue-600/30 text-blue-300 hover:bg-blue-600/10 hover:border-blue-600 font-medium font-heading"
+              className="border-blue-600/30 text-blue-300 hover:bg-blue-600/10 hover:border-blue-600 font-medium font-heading text-sm sm:text-base"
               onClick={() => window.open("https://www.linkedin.com/in/tej-suklikar/", "_blank")}
             >
-              <Linkedin className="w-5 h-5 mr-2" />
+              <Linkedin className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
               LinkedIn
             </Button>
             <Button
               variant="outline"
               size="lg"
-              className="border-blue-600/30 text-blue-300 hover:bg-blue-600/10 hover:border-blue-600 font-medium font-heading"
+              className="border-blue-600/30 text-blue-300 hover:bg-blue-600/10 hover:border-blue-600 font-medium font-heading text-sm sm:text-base"
               onClick={() => window.open("https://github.com/TejSuklikar", "_blank")}
             >
-              <Github className="w-5 h-5 mr-2" />
+              <Github className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
               GitHub
             </Button>
           </div>
@@ -495,9 +506,11 @@ export default function Portfolio() {
       </section>
 
       {/* Footer */}
-      <footer className="py-8 px-4 border-t border-blue-600/20">
+      <footer className="py-6 sm:py-8 px-4 border-t border-blue-600/20">
         <div className="max-w-6xl mx-auto text-center text-gray-400">
-          <p className="font-light">&copy; Tej Suklikar. All rights reserved. Built with React, Next.js, TypeScript, & Tailwind CSS</p>
+          <p className="font-light text-sm sm:text-base">
+            &copy; Tej Suklikar. All rights reserved. Built with React, Next.js, TypeScript, & Tailwind CSS
+          </p>
         </div>
       </footer>
     </div>
