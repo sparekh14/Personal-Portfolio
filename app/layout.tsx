@@ -3,8 +3,12 @@ import type { Metadata } from "next"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "Tej Suklikar - Portfolio",
+  title: "Tej",
   description: "Computer Science and Linguistics student passionate about AI, Machine Learning, and Data Science",
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-icon.png",
+  },
     generator: 'v0.dev'
 }
 

@@ -131,7 +131,7 @@ export default function Portfolio() {
         "AI-driven platform that optimizes supply chain routes using real-time environmental and traffic data, reducing carbon emissions by up to 35% while improving logistical efficiency.",
       technologies: ["Python", "Flask", "React.js"],
       icon: "☁️",
-      demo: "https://github.com/TejSuklikar/EcoNavix",
+      demo: "https://github.com/TejSuklikar/EcoNavixAI",
     },
     {
       title: "LiveReqs",
