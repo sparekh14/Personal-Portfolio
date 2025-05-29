@@ -6,10 +6,10 @@ export const metadata: Metadata = {
   title: "Tej | Portfolio",
   description: "Computer Science and Linguistics student passionate about AI, Machine Learning, and Data Science",
   icons: {
-    icon: "/favicon.ico",
-    apple: "/apple-icon.png",
+    icon: [{ url: "/favicon.ico", sizes: "any" }],
+    apple: [{ url: "/apple-icon.png" }],
   },
-    generator: 'v0.dev'
+  generator: "v0.dev",
 }
 
 export default function RootLayout({
