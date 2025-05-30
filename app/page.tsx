@@ -37,8 +37,8 @@ export default function Portfolio() {
           }
         }
       },
-      isDeleting ? 50 : 80, // Changed from 100 to 80 for faster typing
-    ) // Faster deletion, slower typing
+      isDeleting ? 50 : 80,
+    )
 
     return () => clearTimeout(timeout)
   }, [displayText, isDeleting, roleIndex])
@@ -48,7 +48,7 @@ export default function Portfolio() {
   useEffect(() => {
     const handleScroll = () => {
       const sections = ["home", "about", "experience", "projects", "skills", "contact"]
-      const scrollPosition = window.scrollY + 150 // Increased offset for better detection
+      const scrollPosition = window.scrollY + 150
 
       // Check if we're near the bottom of the page (contact section)
       const windowHeight = window.innerHeight
@@ -81,7 +81,7 @@ export default function Portfolio() {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId)
     if (element) {
-      const navHeight = 80 // Approximate height of the navigation bar
+      const navHeight = 80
       const elementPosition = element.offsetTop - navHeight
       window.scrollTo({
         top: elementPosition,
@@ -158,9 +158,8 @@ export default function Portfolio() {
       logo: "/logos/decision-factories-logo.png",
       website: null,
       description: [
-        "Built an LLM-powered web application that transforms high-level use case descriptions into detailed specifications and executable flows, facilitating business feedback.",
-        "From a high-level description of a use case, generate a detailed specification, a flowchart, and an executable flow that can be validated through interactively simulating various test scenarios.",
-        "Developed the MVP using React.js and Node.js, integrating TLDraw for dynamic flowchart generation, RESTful APIs for backend communication, and Claude for generating executable code in an infinite canvas UI.",
+        "Built LiveReqs, an LLM-powered application that transforms high-level use case descriptions into detailed specifications, interactive flowcharts, and executable flows. The tool enables real-time validation and structured business feedback, and was presented to potential customers for feedback and refinement.",
+        "Designed and developed the company website with a responsive user interface and clear navigation to communicate the company's mission, showcase projects, and feature product demonstrations.",
       ],
     },
   ]
@@ -180,7 +179,7 @@ export default function Portfolio() {
       category: "SOFTWARE DEVELOPMENT",
       description:
         "LLM-powered application that enables Product Managers to convert high-level product requirements into detailed, testable use case documentation with visual flowcharts, executable code, and automated scenario validation.",
-      technologies: ["React.js", "Node.js", "REST APIs", "TLDraw"],
+      technologies: ["React.js", "Node.js", "REST APIs", "TLDraw", "Claude"],
       icon: "👥",
       demo: "https://drive.google.com/file/d/1vHlgmCA0g7pTzsWpSPBkkDVtMHJ_NYDg/view",
     },
@@ -293,7 +292,7 @@ export default function Portfolio() {
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-black/90 backdrop-blur-sm border-b border-blue-600/20">
         <div className="max-w-7xl mx-auto px-2 sm:px-4 lg:px-8">
-          <div className="flex justify-center space-x-1 sm:space-x-2 md:space-x-4 lg:space-x-8 py-2 sm:py-3 md:py-4 overflow-x-auto scrollbar-hide">
+          <div className="flex justify-center space-x-1 sm:space-x-2 md:space-x-4 lg:space-x-8 py-2 sm:py-3 md:py-4 overflow-x-auto">
             {navItems.map((item) => (
               <button
                 key={item.id}
@@ -313,53 +312,54 @@ export default function Portfolio() {
 
       {/* Home Section */}
       <section id="home" className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-20">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 lg:gap-12 items-center">
-          <div className="text-center md:text-left order-2 md:order-1 md:col-span-2">
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-medium mb-2 sm:mb-3 tracking-tight">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 items-center">
+          <div className="text-center lg:text-left order-2 lg:order-1 lg:col-span-2">
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-medium mb-3 tracking-tight">
               Nice to meet you! <span className="inline-block animate-pulse">👋</span>
             </h2>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-4 sm:mb-6 tracking-tight font-heading">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 tracking-tight font-heading">
               <span className="text-white hover:bg-gradient-to-r hover:from-green-400 hover:via-teal-400 hover:to-blue-500 hover:text-transparent hover:bg-clip-text transition-all duration-300 cursor-default">
                 I'm Tej
               </span>
             </h1>
-            <div className="h-10 sm:h-12 md:h-16 mb-6">
+            {/* Fixed height container for typewriter to prevent layout shifts */}
+            <div className="h-16 sm:h-20 md:h-24 mb-8 flex items-center justify-center lg:justify-start">
               <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold">
                 I'm a{" "}
-                <span className="inline-block text-[#6BB6FF]">
+                <span className="inline-block text-[#6BB6FF] min-w-[200px] sm:min-w-[250px] md:min-w-[300px] text-left">
                   {displayText}
                   <span className="inline-block w-0.5 sm:w-1 h-6 sm:h-8 bg-[#6BB6FF] ml-1 animate-pulse"></span>
                 </span>
               </div>
             </div>
-            <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4 mb-8">
+            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4 mb-8">
               <button
                 onClick={() => scrollToSection("contact")}
-                className="bg-gray-800 hover:bg-gray-700 text-white font-semibold px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 rounded-full font-heading text-xs sm:text-sm md:text-base flex items-center transition-all duration-300 border border-gray-700 hover:border-gray-600 w-full sm:w-auto justify-center"
+                className="bg-gray-800 hover:bg-gray-700 text-white font-semibold px-6 md:px-8 py-3 md:py-4 rounded-full font-heading text-sm md:text-base flex items-center transition-all duration-300 border border-gray-700 hover:border-gray-600 min-w-[180px] justify-center"
               >
                 Contact me here <span className="ml-2">→</span>
               </button>
               <div className="flex space-x-3">
                 <button
                   onClick={() => window.open("https://www.linkedin.com/in/tej-suklikar/", "_blank")}
-                  className="bg-white hover:bg-gray-100 p-2 sm:p-3 rounded-full transition-all duration-300"
+                  className="bg-white hover:bg-gray-100 p-3 rounded-full transition-all duration-300"
                   aria-label="LinkedIn"
                 >
-                  <Linkedin className="w-4 h-4 sm:w-5 sm:h-5 text-gray-800" />
+                  <Linkedin className="w-5 h-5 text-gray-800" />
                 </button>
                 <button
                   onClick={() => window.open("https://github.com/TejSuklikar", "_blank")}
-                  className="bg-white hover:bg-gray-100 p-2 sm:p-3 rounded-full transition-all duration-300"
+                  className="bg-white hover:bg-gray-100 p-3 rounded-full transition-all duration-300"
                   aria-label="GitHub"
                 >
-                  <Github className="w-4 h-4 sm:w-5 sm:h-5 text-gray-800" />
+                  <Github className="w-5 h-5 text-gray-800" />
                 </button>
               </div>
             </div>
           </div>
-          <div className="flex justify-center order-1 md:order-2 md:col-span-1">
+          <div className="flex justify-center order-1 lg:order-2 lg:col-span-1">
             <div className="relative">
-              <div className="w-40 h-40 sm:w-48 sm:h-48 md:w-52 md:h-52 lg:w-60 lg:h-60 xl:w-68 xl:h-68 rounded-full overflow-hidden border-2 sm:border-4 border-white shadow-2xl">
+              <div className="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-72 lg:h-72 rounded-full overflow-hidden border-4 border-white shadow-2xl">
                 <img
                   src="/profile-photo.jpeg"
                   alt="Tej Suklikar"
@@ -373,13 +373,13 @@ export default function Portfolio() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 lg:px-8 bg-gray-900/30">
+      <section id="about" className="py-20 md:py-24 px-4 sm:px-6 lg:px-8 bg-gray-900/30">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-8 sm:mb-10 md:mb-12 tracking-tight font-heading">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-12 tracking-tight font-heading">
             <span className="text-blue-300">About</span>
           </h2>
-          <div className="max-w-3xl mx-auto text-center">
-            <p className="text-base sm:text-lg md:text-xl text-gray-300 leading-relaxed font-light mb-6 sm:mb-8">
+          <div className="max-w-4xl mx-auto text-center">
+            <p className="text-lg md:text-xl text-gray-300 leading-relaxed font-light mb-8">
               I'm a Computer Science and Linguistics student at the University of Maryland, passionate about developing
               innovative software solutions. I focus on leveraging AI, Machine Learning, and Data Science to solve
               complex problems across various industries, and I'm eager to explore new ways these technologies can be
@@ -388,83 +388,76 @@ export default function Portfolio() {
               <span className="font-semibold">Anoki AI</span>, focusing on{" "}
               <span className="font-semibold">Generative AI applications</span>.
             </p>
-            <p className="text-base sm:text-lg md:text-xl text-gray-300 leading-relaxed font-light mb-6 sm:mb-8">
+            <p className="text-lg md:text-xl text-gray-300 leading-relaxed font-light mb-8">
               <span className="italic">When I'm not coding</span>, I enjoy playing soccer, golfing, working out, and
               spending time with my dog, Beau.
             </p>
             <div className="flex items-center justify-center space-x-2 text-blue-300">
-              <MapPin className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5" />
-              <span className="font-medium text-xs sm:text-sm md:text-base">San Francisco, CA</span>
+              <MapPin className="w-5 h-5" />
+              <span className="font-medium text-base">San Francisco, CA</span>
             </div>
           </div>
         </div>
       </section>
 
       {/* Experience Section */}
-      <section id="experience" className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 lg:px-8">
+      <section id="experience" className="py-20 md:py-24 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-8 sm:mb-10 md:mb-12 tracking-tight font-heading">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-12 tracking-tight font-heading">
             <span className="text-blue-300">Experience</span>
           </h2>
-          <div className="space-y-4 sm:space-y-6 md:space-y-8">
+          <div className="space-y-8">
             {experiences.map((exp, index) => (
               <Card
                 key={index}
                 className="bg-gray-900/50 border-blue-600/20 hover:border-blue-600/40 transition-all duration-300"
               >
-                <CardHeader className="p-4 sm:p-6">
-                  <div className="flex flex-col space-y-3 sm:space-y-4">
-                    <div className="flex flex-col sm:flex-row items-center sm:items-start space-y-3 sm:space-y-0 sm:space-x-4">
-                      <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 rounded-md overflow-hidden flex items-center justify-center p-1 sm:p-2 flex-shrink-0">
-                        <img
-                          src={exp.logo || "/placeholder.svg"}
-                          alt={`${exp.company} logo`}
-                          className="w-full h-full object-contain"
-                          style={exp.company === "Decision Factories" ? { filter: "brightness(0) invert(1)" } : {}}
-                        />
-                      </div>
-                      <div className="flex-1 text-center sm:text-left">
-                        <CardTitle className="text-base sm:text-lg md:text-xl text-white font-semibold font-heading">
-                          {exp.title}
-                        </CardTitle>
-                        <CardDescription className="text-blue-300 font-medium font-heading text-sm sm:text-base">
-                          {exp.website ? (
-                            <button
-                              onClick={() => window.open(exp.website, "_blank")}
-                              className="hover:text-blue-200 transition-colors cursor-pointer underline decoration-transparent hover:decoration-blue-300"
-                            >
-                              {exp.company}
-                            </button>
-                          ) : (
-                            exp.company
-                          )}
-                        </CardDescription>
-                        <div className="flex flex-col sm:flex-row items-center justify-center sm:justify-start space-y-1 sm:space-y-0 sm:space-x-4 mt-2 text-gray-400">
-                          {exp.location && (
-                            <div className="flex items-center space-x-1">
-                              <MapPin className="w-3 h-3 sm:w-4 sm:h-4" />
-                              <span className="text-xs sm:text-sm">{exp.location}</span>
-                            </div>
-                          )}
-                          {exp.period && (
-                            <div className="flex items-center space-x-1">
-                              <Calendar className="w-3 h-3 sm:w-4 sm:h-4" />
-                              <span className="text-xs sm:text-sm">{exp.period}</span>
-                            </div>
-                          )}
-                        </div>
+                <CardHeader className="p-6">
+                  <div className="flex flex-col lg:flex-row items-center lg:items-start space-y-4 lg:space-y-0 lg:space-x-6">
+                    <div className="w-16 h-16 rounded-md overflow-hidden flex items-center justify-center p-2 flex-shrink-0">
+                      <img
+                        src={exp.logo || "/placeholder.svg"}
+                        alt={`${exp.company} logo`}
+                        className="w-full h-full object-contain"
+                        style={exp.company === "Decision Factories" ? { filter: "brightness(0) invert(1)" } : {}}
+                      />
+                    </div>
+                    <div className="flex-1 text-center lg:text-left">
+                      <CardTitle className="text-xl text-white font-semibold font-heading mb-2">{exp.title}</CardTitle>
+                      <CardDescription className="text-blue-300 font-medium font-heading text-base mb-3">
+                        {exp.website ? (
+                          <button
+                            onClick={() => window.open(exp.website, "_blank")}
+                            className="hover:text-blue-200 transition-colors cursor-pointer underline decoration-transparent hover:decoration-blue-300"
+                          >
+                            {exp.company}
+                          </button>
+                        ) : (
+                          exp.company
+                        )}
+                      </CardDescription>
+                      <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start space-y-2 sm:space-y-0 sm:space-x-6 text-gray-400">
+                        {exp.location && (
+                          <div className="flex items-center space-x-2">
+                            <MapPin className="w-4 h-4" />
+                            <span className="text-sm">{exp.location}</span>
+                          </div>
+                        )}
+                        {exp.period && (
+                          <div className="flex items-center space-x-2">
+                            <Calendar className="w-4 h-4" />
+                            <span className="text-sm">{exp.period}</span>
+                          </div>
+                        )}
                       </div>
                     </div>
                   </div>
                 </CardHeader>
-                <CardContent className="p-4 sm:p-6 pt-0">
-                  <ul className="space-y-2 sm:space-y-3">
+                <CardContent className="p-6 pt-0">
+                  <ul className="space-y-3">
                     {exp.description.map((item, i) => (
-                      <li
-                        key={i}
-                        className="text-gray-300 flex items-start leading-relaxed text-xs sm:text-sm md:text-base"
-                      >
-                        <span className="text-blue-300 mr-2 sm:mr-3 mt-1 flex-shrink-0">•</span>
+                      <li key={i} className="text-gray-300 flex items-start leading-relaxed text-base">
+                        <span className="text-blue-300 mr-3 mt-1 flex-shrink-0">•</span>
                         <span className="font-light">{item}</span>
                       </li>
                     ))}
@@ -477,46 +470,43 @@ export default function Portfolio() {
       </section>
 
       {/* Projects Section */}
-      <section id="projects" className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 lg:px-8 bg-gray-900/30">
+      <section id="projects" className="py-20 md:py-24 px-4 sm:px-6 lg:px-8 bg-gray-900/30">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-8 sm:mb-10 md:mb-12 tracking-tight font-heading">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-12 tracking-tight font-heading">
             <span className="text-blue-300">Projects</span>
           </h2>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {projects.map((project, index) => (
               <Card
                 key={index}
-                className="bg-black/50 border-blue-600/20 hover:border-blue-600/40 transition-all duration-300 group"
+                className="bg-black/50 border-blue-600/20 hover:border-blue-600/40 transition-all duration-300 group h-full"
               >
-                <CardHeader className="p-4 sm:p-6">
-                  <div className="flex items-center justify-between mb-3">
-                    <div className="text-2xl sm:text-3xl md:text-4xl">{project.icon}</div>
+                <CardHeader className="p-6">
+                  <div className="flex items-center justify-between mb-4">
+                    <div className="text-4xl">{project.icon}</div>
                     <div className="flex space-x-2">
                       <Button
                         size="sm"
                         variant="ghost"
-                        className="text-blue-300 hover:text-blue-300 p-1 sm:p-2"
+                        className="text-blue-300 hover:text-blue-300 p-2"
                         onClick={() => window.open(project.demo, "_blank")}
                       >
-                        <ExternalLink className="w-3 h-3 sm:w-4 sm:h-4" />
+                        <ExternalLink className="w-4 h-4" />
                       </Button>
                     </div>
                   </div>
-                  <Badge
-                    variant="outline"
-                    className="text-blue-300 border-blue-600/30 w-fit font-medium text-xs sm:text-sm mb-2"
-                  >
+                  <Badge variant="outline" className="text-blue-300 border-blue-600/30 w-fit font-medium text-sm mb-3">
                     {project.category}
                   </Badge>
-                  <CardTitle className="text-base sm:text-lg md:text-xl text-white group-hover:text-blue-300 transition-colors font-semibold font-heading mb-2">
+                  <CardTitle className="text-xl text-white group-hover:text-blue-300 transition-colors font-semibold font-heading mb-3">
                     {project.title}
                   </CardTitle>
-                  <CardDescription className="text-gray-300 font-light leading-relaxed text-xs sm:text-sm md:text-base">
+                  <CardDescription className="text-gray-300 font-light leading-relaxed text-base">
                     {project.description}
                   </CardDescription>
                 </CardHeader>
-                <CardContent className="p-4 sm:p-6 pt-0">
-                  <div className="flex flex-wrap gap-1 sm:gap-2">
+                <CardContent className="p-6 pt-0">
+                  <div className="flex flex-wrap gap-2">
                     {project.technologies.map((tech, i) => (
                       <Badge key={i} variant="secondary" className="bg-blue-600/10 text-blue-300 font-medium text-xs">
                         {tech}
@@ -531,38 +521,36 @@ export default function Portfolio() {
       </section>
 
       {/* Skills Section */}
-      <section id="skills" className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 lg:px-8">
+      <section id="skills" className="py-20 md:py-24 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-8 sm:mb-10 md:mb-12 tracking-tight font-heading">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-12 tracking-tight font-heading">
             <span className="text-blue-300">Skills</span>
           </h2>
-          <div className="space-y-6 sm:space-y-8 md:space-y-12">
+          <div className="space-y-12">
             {skillCategories.map((category, categoryIndex) => (
               <div key={categoryIndex}>
-                <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-blue-300 mb-3 sm:mb-4 md:mb-6 text-center font-heading">
-                  {category.title}
-                </h3>
-                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2 sm:gap-3 md:gap-4">
+                <h3 className="text-2xl font-semibold text-blue-300 mb-6 text-center font-heading">{category.title}</h3>
+                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
                   {category.skills.map((skill, index) => (
                     <Card
                       key={index}
                       className="bg-gray-900/50 border-blue-600/20 hover:border-blue-600/40 transition-all duration-300 hover:scale-105"
                     >
-                      <CardContent className="p-2 sm:p-3 md:p-4 text-center">
+                      <CardContent className="p-4 text-center">
                         {typeof skill.icon === "string" && skill.icon.startsWith("/") ? (
-                          <div className="h-8 w-8 sm:h-12 sm:w-12 md:h-16 md:w-16 mx-auto flex items-center justify-center mb-1 sm:mb-2 md:mb-3 p-1">
+                          <div className="h-16 w-16 mx-auto flex items-center justify-center mb-3 p-1">
                             <img
                               src={skill.icon || "/placeholder.svg"}
                               alt={`${skill.name} logo`}
-                              className="max-h-6 max-w-6 sm:max-h-8 sm:max-w-8 md:max-h-12 md:max-w-12 object-contain"
+                              className="max-h-12 max-w-12 object-contain"
                             />
                           </div>
                         ) : (
-                          <div className="h-8 w-8 sm:h-12 sm:w-12 md:h-16 md:w-16 mx-auto flex items-center justify-center mb-1 sm:mb-2 md:mb-3 text-lg sm:text-2xl md:text-4xl">
+                          <div className="h-16 w-16 mx-auto flex items-center justify-center mb-3 text-4xl">
                             {skill.icon}
                           </div>
                         )}
-                        <p className="text-white font-medium text-xs sm:text-sm leading-tight">{skill.name}</p>
+                        <p className="text-white font-medium text-sm leading-tight">{skill.name}</p>
                       </CardContent>
                     </Card>
                   ))}
@@ -574,41 +562,41 @@ export default function Portfolio() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 lg:px-8 bg-gray-900/30">
+      <section id="contact" className="py-20 md:py-24 px-4 sm:px-6 lg:px-8 bg-gray-900/30">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8 sm:mb-10 md:mb-12 tracking-tight font-heading">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 tracking-tight font-heading">
             <span className="text-blue-300">Get In Touch</span>
           </h2>
-          <p className="text-base sm:text-lg md:text-xl text-gray-300 mb-6 sm:mb-8 md:mb-12 max-w-2xl mx-auto font-light leading-relaxed">
+          <p className="text-lg md:text-xl text-gray-300 mb-12 max-w-2xl mx-auto font-light leading-relaxed">
             I'm always open to discussing new opportunities, interesting projects, or just having a chat about
             technology. Feel free to reach out!
           </p>
-          <div className="flex flex-col sm:flex-row justify-center space-y-3 sm:space-y-0 sm:space-x-4 md:space-x-6">
+          <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
             <Button
               variant="outline"
               size="lg"
-              className="bg-white text-blue-400 hover:text-blue-500 border-none font-medium font-heading text-sm md:text-base flex items-center justify-center px-6 sm:px-8 py-4 sm:py-6"
+              className="bg-white text-blue-400 hover:text-blue-500 border-none font-medium font-heading text-base flex items-center justify-center px-8 py-6 min-w-[140px]"
               onClick={() => window.open("mailto:anitej@suklikar.org")}
             >
-              <Mail className="w-4 h-4 sm:w-5 sm:h-5 mr-2 sm:mr-3" />
+              <Mail className="w-5 h-5 mr-3" />
               Email Me
             </Button>
             <Button
               variant="outline"
               size="lg"
-              className="bg-white text-blue-400 hover:text-blue-500 border-none font-medium font-heading text-sm md:text-base flex items-center justify-center px-6 sm:px-8 py-4 sm:py-6"
+              className="bg-white text-blue-400 hover:text-blue-500 border-none font-medium font-heading text-base flex items-center justify-center px-8 py-6 min-w-[140px]"
               onClick={() => window.open("https://www.linkedin.com/in/tej-suklikar/", "_blank")}
             >
-              <Linkedin className="w-4 h-4 sm:w-5 sm:h-5 mr-2 sm:mr-3" />
+              <Linkedin className="w-5 h-5 mr-3" />
               LinkedIn
             </Button>
             <Button
               variant="outline"
               size="lg"
-              className="bg-white text-blue-400 hover:text-blue-500 border-none font-medium font-heading text-sm md:text-base flex items-center justify-center px-6 sm:px-8 py-4 sm:py-6"
+              className="bg-white text-blue-400 hover:text-blue-500 border-none font-medium font-heading text-base flex items-center justify-center px-8 py-6 min-w-[140px]"
               onClick={() => window.open("https://github.com/TejSuklikar", "_blank")}
             >
-              <Github className="w-4 h-4 sm:w-5 sm:h-5 mr-2 sm:mr-3" />
+              <Github className="w-5 h-5 mr-3" />
               GitHub
             </Button>
           </div>
@@ -616,9 +604,9 @@ export default function Portfolio() {
       </section>
 
       {/* Footer */}
-      <footer className="py-4 sm:py-6 md:py-8 px-4 sm:px-6 lg:px-8 border-t border-blue-600/20">
+      <footer className="py-8 px-4 sm:px-6 lg:px-8 border-t border-blue-600/20">
         <div className="max-w-6xl mx-auto text-center text-gray-400">
-          <p className="font-light text-xs sm:text-sm md:text-base">
+          <p className="font-light text-base">
             &copy; Tej Suklikar. All rights reserved. Built with React, Next.js, TypeScript, & Tailwind CSS
           </p>
         </div>
