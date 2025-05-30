@@ -81,7 +81,12 @@ export default function Portfolio() {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId)
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" })
+      const navHeight = 80 // Approximate height of the navigation bar
+      const elementPosition = element.offsetTop - navHeight
+      window.scrollTo({
+        top: elementPosition,
+        behavior: "smooth",
+      })
     }
   }
 
@@ -368,13 +373,13 @@ export default function Portfolio() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-6 sm:py-8 md:py-12 px-4 sm:px-6 lg:px-8 bg-gray-900/30">
+      <section id="about" className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 lg:px-8 bg-gray-900/30">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-4 sm:mb-6 md:mb-8 tracking-tight font-heading">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-8 sm:mb-10 md:mb-12 tracking-tight font-heading">
             <span className="text-blue-300">About</span>
           </h2>
           <div className="max-w-3xl mx-auto text-center">
-            <p className="text-base sm:text-lg md:text-xl text-gray-300 leading-relaxed font-light mb-4 sm:mb-6">
+            <p className="text-base sm:text-lg md:text-xl text-gray-300 leading-relaxed font-light mb-6 sm:mb-8">
               I'm a Computer Science and Linguistics student at the University of Maryland, passionate about developing
               innovative software solutions. I focus on leveraging AI, Machine Learning, and Data Science to solve
               complex problems across various industries, and I'm eager to explore new ways these technologies can be
@@ -383,11 +388,11 @@ export default function Portfolio() {
               <span className="font-semibold">Anoki AI</span>, focusing on{" "}
               <span className="font-semibold">Generative AI applications</span>.
             </p>
-            <p className="text-base sm:text-lg md:text-xl text-gray-300 leading-relaxed font-light">
+            <p className="text-base sm:text-lg md:text-xl text-gray-300 leading-relaxed font-light mb-6 sm:mb-8">
               <span className="italic">When I'm not coding</span>, I enjoy playing soccer, golfing, working out, and
               spending time with my dog, Beau.
             </p>
-            <div className="flex items-center justify-center space-x-2 text-blue-300 mt-4 sm:mt-6">
+            <div className="flex items-center justify-center space-x-2 text-blue-300">
               <MapPin className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5" />
               <span className="font-medium text-xs sm:text-sm md:text-base">San Francisco, CA</span>
             </div>
@@ -396,9 +401,9 @@ export default function Portfolio() {
       </section>
 
       {/* Experience Section */}
-      <section id="experience" className="py-6 sm:py-8 md:py-12 px-4 sm:px-6 lg:px-8">
+      <section id="experience" className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-4 sm:mb-6 md:mb-8 tracking-tight font-heading">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-8 sm:mb-10 md:mb-12 tracking-tight font-heading">
             <span className="text-blue-300">Experience</span>
           </h2>
           <div className="space-y-4 sm:space-y-6 md:space-y-8">
@@ -472,9 +477,9 @@ export default function Portfolio() {
       </section>
 
       {/* Projects Section */}
-      <section id="projects" className="py-6 sm:py-8 md:py-12 px-4 sm:px-6 lg:px-8 bg-gray-900/30">
+      <section id="projects" className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 lg:px-8 bg-gray-900/30">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-4 sm:mb-6 md:mb-8 tracking-tight font-heading">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-8 sm:mb-10 md:mb-12 tracking-tight font-heading">
             <span className="text-blue-300">Projects</span>
           </h2>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
@@ -526,9 +531,9 @@ export default function Portfolio() {
       </section>
 
       {/* Skills Section */}
-      <section id="skills" className="py-6 sm:py-8 md:py-12 px-4 sm:px-6 lg:px-8">
+      <section id="skills" className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-4 sm:mb-6 md:mb-8 tracking-tight font-heading">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-8 sm:mb-10 md:mb-12 tracking-tight font-heading">
             <span className="text-blue-300">Skills</span>
           </h2>
           <div className="space-y-6 sm:space-y-8 md:space-y-12">
@@ -569,9 +574,9 @@ export default function Portfolio() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-6 sm:py-8 md:py-12 px-4 sm:px-6 lg:px-8 bg-gray-900/30">
+      <section id="contact" className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 lg:px-8 bg-gray-900/30">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 md:mb-8 tracking-tight font-heading">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8 sm:mb-10 md:mb-12 tracking-tight font-heading">
             <span className="text-blue-300">Get In Touch</span>
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-gray-300 mb-6 sm:mb-8 md:mb-12 max-w-2xl mx-auto font-light leading-relaxed">
