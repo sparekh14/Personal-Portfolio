@@ -75,10 +75,10 @@ export default function Portfolio() {
       logo: "/logos/umiacs-logo.png",
       website: "https://www.umiacs.umd.edu/",
       description: [
-        "Collaborating with Dr. Naomi Feldman and graduate fellow Imani Finkley to propose a framework for assessing novelty in LLM-generated literature.",
-        "Constructing a 200K-item dataset of LLM-generated literature to support large-scale analysis.",
-        "Performing data analysis and fine-tuning models (OPT-175b, BERT) using NLP to study how prompt complexity impacts originality, hypothesizing that detailed prompts enhance novelty but overly detailed ones can reduce it.",
-        "Leveraging the Creativity Index and n-gram sequencing to evaluate thematic diversity and originality in LLM-generated text.",
+        "Collaborated with Dr. Naomi Feldman and graduate fellow Imani Finkley to propose a framework for assessing novelty in LLM-generated literature.",
+        "Constructed a 200K-item dataset of LLM-generated literature to support large-scale analysis.",
+        "Performed data analysis and fine-tuning models (OPT-175b, BERT) using NLP to study how prompt complexity impacts originality, hypothesizing that detailed prompts enhance novelty but overly detailed ones can reduce it.",
+        "Leveraged the Creativity Index and n-gram sequencing to evaluate thematic diversity and originality in LLM-generated text.",
       ],
     },
     {
