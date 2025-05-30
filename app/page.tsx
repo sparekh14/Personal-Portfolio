@@ -147,7 +147,7 @@ export default function Portfolio() {
       category: "Full-Stack Development",
       description:
         "Photo-sharing and scheduling platform for Camp Starfish, a nonprofit serving youth with social-emotional challenges. The system supports over 1,500 photos and 300 camper records each summer, used by 60+ staff to securely manage media and streamline camper scheduling.",
-      technologies: ["Firestore", "React.js", "AWS"],
+      technologies: ["Firebase", "AWS", "React.js"],
       icon: "⭐",
       demo: "https://docs.google.com/presentation/d/16vBt3v3ev4AX0mnmETDYSM6hhrsJ8w6QKF9zASiV840/edit?usp=sharing",
     },
