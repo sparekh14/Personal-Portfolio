@@ -62,7 +62,7 @@ export default function Portfolio() {
       title: "Software Engineer Intern",
       company: "Anoki AI",
       location: "Mountain View, CA",
-      period: "June 2025 - Present",
+      period: "Jun 2025 - Present",
       logo: "/logos/anoki-logo.png",
       website: "https://www.anoki.ai/",
       description: ["Incoming SWE Intern Summer 2025"],
