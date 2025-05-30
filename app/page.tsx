@@ -308,53 +308,53 @@ export default function Portfolio() {
 
       {/* Home Section */}
       <section id="home" className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-20">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-16 items-center">
-          <div className="text-center md:text-left">
-            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-medium mb-3 sm:mb-4 tracking-tight">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 lg:gap-12 items-center">
+          <div className="text-center md:text-left order-2 md:order-1 md:col-span-2">
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-medium mb-2 sm:mb-3 tracking-tight">
               Nice to meet you! <span className="inline-block animate-pulse">👋</span>
             </h2>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 sm:mb-8 tracking-tight font-heading">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-4 sm:mb-6 tracking-tight font-heading">
               <span className="text-white hover:bg-gradient-to-r hover:from-green-400 hover:via-teal-400 hover:to-blue-500 hover:text-transparent hover:bg-clip-text transition-all duration-300 cursor-default">
                 I'm Tej
               </span>
             </h1>
-            <div className="h-12 sm:h-16 md:h-20 mb-8">
-              <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold">
+            <div className="h-10 sm:h-12 md:h-16 mb-6">
+              <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold">
                 I'm a{" "}
                 <span className="inline-block text-[#6BB6FF]">
                   {displayText}
-                  <span className="inline-block w-1 sm:w-1.5 h-10 sm:h-12 bg-[#6BB6FF] ml-1 animate-pulse"></span>
+                  <span className="inline-block w-0.5 sm:w-1 h-6 sm:h-8 bg-[#6BB6FF] ml-1 animate-pulse"></span>
                 </span>
               </div>
             </div>
-            <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-6 mb-8">
+            <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4 mb-8">
               <button
                 onClick={() => scrollToSection("contact")}
-                className="bg-gray-800 hover:bg-gray-700 text-white font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-full font-heading text-base sm:text-lg flex items-center transition-all duration-300 border border-gray-700 hover:border-gray-600 w-full sm:w-auto justify-center"
+                className="bg-gray-800 hover:bg-gray-700 text-white font-semibold px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 rounded-full font-heading text-xs sm:text-sm md:text-base flex items-center transition-all duration-300 border border-gray-700 hover:border-gray-600 w-full sm:w-auto justify-center"
               >
                 Contact me here <span className="ml-2">→</span>
               </button>
-              <div className="flex space-x-4">
+              <div className="flex space-x-3">
                 <button
                   onClick={() => window.open("https://www.linkedin.com/in/tej-suklikar/", "_blank")}
-                  className="bg-white hover:bg-gray-100 p-3 sm:p-4 rounded-full transition-all duration-300"
+                  className="bg-white hover:bg-gray-100 p-2 sm:p-3 rounded-full transition-all duration-300"
                   aria-label="LinkedIn"
                 >
-                  <Linkedin className="w-5 h-5 sm:w-6 sm:h-6 text-gray-800" />
+                  <Linkedin className="w-4 h-4 sm:w-5 sm:h-5 text-gray-800" />
                 </button>
                 <button
                   onClick={() => window.open("https://github.com/TejSuklikar", "_blank")}
-                  className="bg-white hover:bg-gray-100 p-3 sm:p-4 rounded-full transition-all duration-300"
+                  className="bg-white hover:bg-gray-100 p-2 sm:p-3 rounded-full transition-all duration-300"
                   aria-label="GitHub"
                 >
-                  <Github className="w-5 h-5 sm:w-6 sm:h-6 text-gray-800" />
+                  <Github className="w-4 h-4 sm:w-5 sm:h-5 text-gray-800" />
                 </button>
               </div>
             </div>
           </div>
-          <div className="flex justify-center md:justify-end">
+          <div className="flex justify-center order-1 md:order-2 md:col-span-1">
             <div className="relative">
-              <div className="w-56 h-56 sm:w-64 sm:h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 rounded-full overflow-hidden border-4 border-white shadow-2xl">
+              <div className="w-40 h-40 sm:w-48 sm:h-48 md:w-52 md:h-52 lg:w-60 lg:h-60 xl:w-68 xl:h-68 rounded-full overflow-hidden border-2 sm:border-4 border-white shadow-2xl">
                 <img
                   src="/profile-photo.jpeg"
                   alt="Tej Suklikar"
