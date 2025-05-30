@@ -33,4 +33,4 @@ I'm always open to connecting and discussing new opportunities. You can reach me
 - **Email**: [anitej@suklikar.org](mailto:anitej@suklikar.org)  
 - **LinkedIn**: [linkedin.com/in/tej-suklikar](https://www.linkedin.com/in/tej-suklikar/)  
 - **GitHub**: [github.com/TejSuklikar](https://github.com/TejSuklikar)  
-- **Website**: [tejsuklikar.suklikar.org](https://tej.suklikar.org)
+- **Website**: [tej.suklikar.org](https://tej.suklikar.org)
