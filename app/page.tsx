@@ -131,7 +131,7 @@ export default function Portfolio() {
         "AI-driven platform that optimizes supply chain routes using real-time environmental and traffic data, reducing carbon emissions by up to 35% while improving logistical efficiency.",
       technologies: ["Python", "Flask", "React.js"],
       icon: "☁️",
-      demo: "https://github.com/TejSuklikar/EcoNavixAI",
+      demo: "https://www.youtube.com/watch?v=j-Y0KCmyz50",
     },
     {
       title: "LiveReqs",
@@ -140,7 +140,25 @@ export default function Portfolio() {
         "LLM-powered application that enables Product Managers to convert high-level product requirements into detailed, testable use case documentation with visual flowcharts, executable code, and automated scenario validation.",
       technologies: ["React.js", "Node.js", "REST APIs", "TLDraw"],
       icon: "👥",
-      demo: "https://github.com/decisionfactories/LiveReqs",
+      demo: "https://drive.google.com/file/d/1vHlgmCA0g7pTzsWpSPBkkDVtMHJ_NYDg/view",
+    },
+    {
+      title: "Camp Starfish",
+      category: "Full-Stack Development",
+      description:
+        "Photo-sharing and scheduling platform for Camp Starfish, a nonprofit serving youth with social-emotional challenges. The system supports over 1,500 photos and 300 camper records each summer, used by 60+ staff to securely manage media and streamline camper scheduling.",
+      technologies: ["Firestore", "React.js", "AWS"],
+      icon: "⭐",
+      demo: "https://docs.google.com/presentation/d/16vBt3v3ev4AX0mnmETDYSM6hhrsJ8w6QKF9zASiV840/edit?usp=sharing",
+    },
+    {
+      title: "CosmoSearch",
+      category: "WEB DEVELOPMENT",
+      description:
+        "Web application that lets users explore NASA's image library. Just enter a space-related term and date range (1920-2025) to browse stunning space images with titles, descriptions, and dates. Designed for quick, engaging cosmic discovery across any device.",
+      technologies: ["Machine Learning", "React.js"],
+      icon: "🚀",
+      demo: "https://space-project-ruddy.vercel.app/",
     },
     {
       title: "Is GPT-3 Smarter Than A Sixth-Grader?",
