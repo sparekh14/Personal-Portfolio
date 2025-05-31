@@ -324,12 +324,18 @@ export default function Portfolio() {
             </h1>
             {/* Fixed height container for typewriter to prevent layout shifts */}
             <div className="h-16 sm:h-20 md:h-24 mb-8 flex items-center justify-center lg:justify-start">
-              <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold">
-                I'm a{" "}
-                <span className="inline-block text-[#6BB6FF] min-w-[200px] sm:min-w-[250px] md:min-w-[300px] text-left">
-                  {displayText}
-                  <span className="inline-block w-0.5 sm:w-1 h-6 sm:h-8 bg-[#6BB6FF] ml-1 animate-pulse"></span>
-                </span>
+              <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold flex items-center">
+                <span className="mr-2">I'm a</span>
+                <div className="relative inline-block">
+                  <span className="text-[#6BB6FF] whitespace-nowrap">
+                    {displayText}
+                    <span className="inline-block w-0.5 sm:w-1 h-6 sm:h-8 bg-[#6BB6FF] ml-1 animate-pulse"></span>
+                  </span>
+                  {/* Invisible text to reserve space for longest text */}
+                  <span className="absolute top-0 left-0 text-transparent pointer-events-none whitespace-nowrap">
+                    Full-Stack Developer.
+                  </span>
+                </div>
               </div>
             </div>
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4 mb-8">
