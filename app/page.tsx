@@ -259,7 +259,7 @@ export default function Portfolio() {
     {
       title: "Frameworks/Libraries",
       skills: [
-        { name: "React.js", icon: "/logos/skills/react-logo.png" },
+        { name: "React/Svelte", icon: "/logos/skills/react-svelte-logo.png" },
         { name: "Node.js", icon: "/logos/skills/nodejs-logo.png" },
         { name: "Express.js", icon: "/logos/skills/express-logo.png" },
         { name: "Next.js", icon: "/logos/skills/nextjs-logo.png" },
