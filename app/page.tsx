@@ -107,7 +107,9 @@ export default function Portfolio() {
       period: "Jun 2025 - Present",
       logo: "/logos/anoki-logo.png",
       website: "https://www.anoki.ai/",
-      description: ["Incoming SWE Intern Summer 2025"],
+      description: [
+        "Building internal tools on the Engineering Augmentation team to support Anoki's AI-powered Connected TV platform and streamline content operations at scale.",
+      ],
     },
     {
       title: "Undergraduate Research Assistant",
@@ -118,9 +120,8 @@ export default function Portfolio() {
       website: "https://www.umiacs.umd.edu/",
       description: [
         "Collaborated with Dr. Naomi Feldman and graduate fellow Imani Finkley to propose a framework for assessing novelty in LLM-generated literature.",
-        "Constructed a 200K-item dataset of LLM-generated literature to support large-scale analysis.",
-        "Performed data analysis and fine-tuning models (OPT-175b, BERT) using NLP to study how prompt complexity impacts originality, hypothesizing that detailed prompts enhance novelty but overly detailed ones can reduce it.",
-        "Leveraged the Creativity Index and n-gram sequencing to evaluate thematic diversity and originality in LLM-generated text.",
+        "Applied the Creativity Index and n-gram analysis to measure lexical and thematic variation across model outputs.",
+        "Fine-tuned and evaluated OPT-175b and BERT under varied prompt conditions to analyze LLM output behavior.",
       ],
     },
     {
@@ -146,8 +147,8 @@ export default function Portfolio() {
       website: "https://www.karya.in/",
       description: [
         "Developed Kalai, a Natural Language Query Dashboard using Google Gemini and LangChain SQL agents to process plain English queries and return SQL responses, enabling users to retrieve data from Karya's datasets.",
+        "Optimized backend SQL execution by introducing caching in PostgreSQL to reduce latency and improve performance.",
         "Implemented a role-based access control (RBAC) system to enforce dataset permissions, ensuring secure and restricted access to sensitive data.",
-        "Optimized backend SQL query execution with caching mechanisms in an SQLite database to enhance performance.",
       ],
     },
     {
@@ -322,17 +323,17 @@ export default function Portfolio() {
                 I'm Tej
               </span>
             </h1>
-            {/* Fixed height container for typewriter to prevent layout shifts */}
-            <div className="h-16 sm:h-20 md:h-24 mb-8 flex items-center justify-center lg:justify-start">
-              <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold flex items-center">
-                <span className="mr-2">I'm a</span>
-                <div className="relative inline-block">
-                  <span className="text-[#6BB6FF] whitespace-nowrap">
+            {/* Fixed height container for typewriter to prevent layout shifts and overflow */}
+            <div className="h-16 sm:h-20 md:h-24 mb-8 flex items-center justify-center lg:justify-start overflow-hidden">
+              <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold flex items-center max-w-full">
+                <span className="mr-2 flex-shrink-0">I'm a</span>
+                <div className="relative inline-block min-w-0 flex-1">
+                  <span className="text-[#6BB6FF] whitespace-nowrap block overflow-hidden text-ellipsis">
                     {displayText}
                     <span className="inline-block w-0.5 sm:w-1 h-6 sm:h-8 bg-[#6BB6FF] ml-1 animate-pulse"></span>
                   </span>
                   {/* Invisible text to reserve space for longest text */}
-                  <span className="absolute top-0 left-0 text-transparent pointer-events-none whitespace-nowrap">
+                  <span className="absolute top-0 left-0 text-transparent pointer-events-none whitespace-nowrap opacity-0">
                     Full-Stack Developer.
                   </span>
                 </div>
