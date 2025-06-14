@@ -128,14 +128,14 @@ export default function Portfolio() {
       title: "Software Engineer",
       company: "Hack4Impact-UMD",
       location: "College Park, MD",
-      period: "Jan 2025 - May 2025",
+      period: "Jan 2025 - Present",
       logo: "/logos/hack4impact-logo.png",
       website: "https://www.hack4impact.org/",
       description: [
-        "Worked on a team to build a photo-sharing and scheduling platform for Camp Starfish, a nonprofit camp supporting youth with social-emotional challenges through a 1:1 staff-to-camper model.",
+        "Working on a team to build a photo-sharing and scheduling platform for Camp Starfish, a nonprofit camp supporting youth with social-emotional challenges through a 1:1 staff-to-camper model.",
         "Built Firestore helper functions for employees, albums, and campers to safely handle multi-step database operations like creating, updating, and querying by ID, UID, or email, ensuring data consistency when multiple records must be changed together.",
         "Developed a responsive Login page with secure Google Authentication using Firebase, styled with Tailwind CSS, including dynamic error messaging for failed sign-ins and a fallback link for unregistered users.",
-        "The system now supports over 1,500 photos and 300 camper records each summer, used by 60+ staff to securely manage media and streamline camper scheduling.",
+        "The system currently supports over 1,500 photos and 300 camper records each summer, used by 60+ staff to securely manage media and streamline camper scheduling.",
       ],
     },
     {
