@@ -1,14 +1,14 @@
-# **Tej Suklikar’s Portfolio**
+# **Samarth Parekh's Portfolio**
 
-Welcome to my personal portfolio—a space where I showcase my latest work, technical skills, and the projects I’ve brought to life. Thanks for stopping by.
+Welcome to my personal portfolio, where I showcase my latest work, technical skills, and the projects I have developed.
 
 ## **About Me**
 
-Hi, I'm **Tej Suklikar**. I’m passionate about using technology to create effective, real-world solutions that drive meaningful impact. Outside of coding, I enjoy soccer, golf, working out, and spending time with my dog, Beau.
+Hi, I'm **Samarth Parekh**. I’m passionate about using technology to create effective, real-world solutions that drive meaningful impact.  I enjoy playing soccer, going to the gym, hanging out with friends, and reading novels. I am also a huge fan of movies and love discovering plots that stay with me.
 
 ## **About This Website**
 
-This site offers a comprehensive view of my professional journey and the work I’ve done. Built with modern web technologies, it includes:
+This site offers a comprehensive view of my professional journey and the work I have done. Built with modern web technologies, it includes:
 
 - **Responsive Design**: Optimized for seamless viewing across all devices.  
 - **Interactive Features**: Smooth transitions and animations for an engaging experience.  
@@ -18,7 +18,7 @@ This site offers a comprehensive view of my professional journey and the work I�
 
 - **Frontend**: React, Next.js  
 - **Styling**: Tailwind CSS  
-- **Deployment**: Vercel  
+- **Deployment**: Vercel 
 
 ## **Skills**
 
@@ -30,7 +30,7 @@ This site offers a comprehensive view of my professional journey and the work I�
 
 I'm always open to connecting and discussing new opportunities. You can reach me here:
 
-- **Email**: [anitej@suklikar.org](mailto:anitej@suklikar.org)  
-- **LinkedIn**: [linkedin.com/in/tej-suklikar](https://www.linkedin.com/in/tej-suklikar/)  
-- **GitHub**: [github.com/TejSuklikar](https://github.com/TejSuklikar)  
-- **Website**: [tej.suklikar.org](https://tej.suklikar.org)
+- **Email**: [parekh.samarth@gmail.com](mailto:parekh.samarth@gmail.com)  
+- **LinkedIn**: [linkedin.com/in/samarth-parekh](linkedin.com/in/samarth-parekh)  
+- **GitHub**: [github.com/sparekh14](https://github.com/sparekh14)  
+- **Website**: []()

@@ -102,142 +102,101 @@ export default function Portfolio() {
   const experiences = [
     {
       title: "Software Engineer Intern",
-      company: "Anoki AI",
-      location: "Mountain View, CA",
+      company: "StoneX",
+      location: "New York, NY",
       period: "Jun 2025 - Present",
-      logo: "/logos/anoki-logo.png",
-      website: "https://www.anoki.ai/",
+      logo: "/logos/stonex-logo.png",
+      website: "https://www.stonex.com/en/",
       description: [
-        "Building internal tools on the Engineering Augmentation team to support Anoki's AI-powered Connected TV platform and streamline content operations at scale.",
+        "CRM + Gen AI Team",
       ],
     },
     {
-      title: "Undergraduate Research Assistant",
-      company: "UMIACS",
+      title: "Quantum Machine Learning Engineer",
+      company: "IonQ",
       location: "College Park, MD",
-      period: "Jan 2025 - Jun 2025",
-      logo: "/logos/umiacs-logo.png",
-      website: "https://www.umiacs.umd.edu/",
+      period: "Jan 2025 - May 2025",
+      logo: "/logos/ionq-logo.png",
+      website: "https://ionq.com/",
       description: [
-        "Collaborated with Dr. Naomi Feldman and graduate fellow Imani Finkley to propose a framework for assessing novelty in LLM-generated literature.",
-        "Applied the Creativity Index and n-gram analysis to measure lexical and thematic variation across model outputs.",
-        "Fine-tuned and evaluated OPT-175b and BERT under varied prompt conditions to analyze LLM output behavior.",
+        "Developed hybrid quantum-classical machine learning algorithms for image classification by leveraging IonQ’s Aria and ForteQPUs to compare the efficiency of classical and quantum models on the MNIST dataset",
+        "Optimized feature reduction techniques for quantum machine learning, enabling improved performance of quantum support vector machines and generative adversarial networks on resource-limited quantum processors",
+      ],
+    },
+    {
+      title: "Software Engineer Intern",
+      company: "US Food and Drug Administration",
+      location: "College Park, MD",
+      period: "June 2024 - May 2025",
+      logo: "/logos/fda-logo.png",
+      website: "https://jifsan.umd.edu/news/view/102",
+      description: [
+        "Designed and implemented a Python/Dash synthetic-data generator to aid in streamlining the data generation and testing process, reducing manual test-data prep time by 30%",
+        "Authored detailed system and API documentation for global engineering teams of an open-source tool to enable global agencies to address traceability concerns, achieving a reduction in manual labor across 10+ international organizations",
+        "Presented a poster to 200+ people at the FDA Foods Program Regulatory Science Conference to highlight the current effort and innovative approach in enhancing global traceability efforts through open-source collaboration",
       ],
     },
     {
       title: "Software Engineer",
-      company: "Hack4Impact-UMD",
+      company: "Warriors Legacy Care",
       location: "College Park, MD",
-      period: "Jan 2025 - Present",
-      logo: "/logos/hack4impact-logo.png",
-      website: "https://www.hack4impact.org/",
+      period: "Sep 2024 - Dec 2024",
+      logo: "/logos/wlc-logo.png",
+      website: "https://warriorslegacycare.com/",
       description: [
-        "Working on a team to build a photo-sharing and scheduling platform for Camp Starfish, a nonprofit camp supporting youth with social-emotional challenges through a 1:1 staff-to-camper model.",
-        "Built Firestore helper functions for employees, albums, and campers to safely handle multi-step database operations like creating, updating, and querying by ID, UID, or email, ensuring data consistency when multiple records must be changed together.",
-        "Developed a responsive Login page with secure Google Authentication using Firebase, styled with Tailwind CSS, including dynamic error messaging for failed sign-ins and a fallback link for unregistered users.",
-        "The system currently supports over 1,500 photos and 300 camper records each summer, used by 60+ staff to securely manage media and streamline camper scheduling.",
+        "Led a 10-member team of engineers in developing a fullstack React Native mobile application to provide essential services to veterans, including care facilities, mental health services, and veteran messaging",
+        "Built an AI-powered resume reviewer that analyzes uploaded resumes using Google Gemini, provides tailored suggestions, and recommends roles based on user profiles, integrated with a web scraper for real-time job postings",
+        "Integrated WebSockets and Geolocation to provide real-time location, user messaging, and enabling dynamic service provider mapping and appointment scheduling via RESTful APIs",
       ],
-    },
-    {
-      title: "Software Engineering Intern",
-      company: "Karya",
-      location: "",
-      period: "Aug 2024 - May 2025",
-      logo: "/logos/karya-logo.png",
-      website: "https://www.karya.in/",
-      description: [
-        "Developed Kalai, a Natural Language Query Dashboard using Google Gemini and LangChain SQL agents to process plain English queries and return SQL responses, enabling users to retrieve data from Karya's datasets.",
-        "Optimized backend SQL execution by introducing caching in PostgreSQL to reduce latency and improve performance.",
-        "Implemented a role-based access control (RBAC) system to enforce dataset permissions, ensuring secure and restricted access to sensitive data.",
-      ],
-    },
-    {
-      title: "Software Engineering Intern",
-      company: "Decision Factories",
-      location: "",
-      period: "May 2024 - Aug 2024",
-      logo: "/logos/decision-factories-logo.png",
-      website: null,
-      description: [
-        "Built LiveReqs, an LLM-powered application that transforms high-level use case descriptions into detailed specifications, interactive flowcharts, and executable flows. The tool enables real-time validation and structured business feedback, and was presented to potential customers for feedback and refinement.",
-        "Designed and developed the company website with a responsive user interface and clear navigation to communicate the company's mission, showcase projects, and feature product demonstrations.",
-      ],
-    },
+    }
   ]
 
   const projects = [
     {
       title: "EcoNavix",
-      category: "MACHINE LEARNING",
+      category: "AI",
       description:
         "AI-driven platform that optimizes supply chain routes using real-time environmental and traffic data, reducing carbon emissions by up to 35% while improving logistical efficiency.",
       technologies: ["Python", "Flask", "React.js"],
-      icon: "☁️",
+      icon: "🌍",
       demo: "https://www.youtube.com/watch?v=j-Y0KCmyz50",
     },
     {
-      title: "LiveReqs",
-      category: "SOFTWARE DEVELOPMENT",
+      title: "Digits 2.0",
+      category: "FULL STACK",
       description:
-        "LLM-powered application that enables Product Managers to convert high-level product requirements into detailed, testable use case documentation with visual flowcharts, executable code, and automated scenario validation.",
-      technologies: ["React.js", "Node.js", "REST APIs", "TLDraw", "Claude"],
-      icon: "👥",
-      demo: "https://drive.google.com/file/d/1vHlgmCA0g7pTzsWpSPBkkDVtMHJ_NYDg/view",
+        "An AI-enhanced numerical puzzle game where players strategically combine numbers via arithmetic to reach a target value, featuring an interactive tile interface, dynamic scoring, and Gemini-powered hints.",
+      technologies: ["React.js", "Node.js", "Tailwind CSS", "TypeScript", "Gemini"],
+      icon: "🔢",
+      demo: "https://studio--number-cruncher-44jel.us-central1.hosted.app/",
     },
     {
-      title: "Camp Starfish",
-      category: "Full-Stack Development",
+      title: "SmartCards.AI",
+      category: "AI",
       description:
-        "Photo-sharing and scheduling platform for Camp Starfish, a nonprofit serving youth with social-emotional challenges. The system supports over 1,500 photos and 300 camper records each summer, used by 60+ staff to securely manage media and streamline camper scheduling.",
-      technologies: ["Firebase", "AWS", "React.js"],
-      icon: "⭐",
-      demo: "https://docs.google.com/presentation/d/16vBt3v3ev4AX0mnmETDYSM6hhrsJ8w6QKF9zASiV840/edit?usp=sharing",
+        "AI-powered flashcard platform that dynamically generates study content based on user input, with support for real-time user analytics, authentication, and subscription access",
+      technologies: ["Next.js", "OpenAI", "Firebase", "Clerk.js", "Stripe"],
+      icon: "💡",
+      demo: "https://github.com/sparekh14/AI-Flashcards?tab=readme-ov-file",
     },
     {
-      title: "CosmoSearch",
-      category: "WEB DEVELOPMENT",
+      title: "MyMoneyTracker",
+      category: "FULL STACK",
       description:
-        "Web application that lets users explore NASA's image library. Just enter a space-related term and date range (1920-2025) to browse stunning space images with titles, descriptions, and dates. Designed for quick, engaging cosmic discovery across any device.",
-      technologies: ["Machine Learning", "React.js"],
-      icon: "🚀",
-      demo: "https://space-project-ruddy.vercel.app/",
+        "Full-stack financial tracker for managing personal transactions with CRUD operations and optimized backend performance for smooth data handling and retrieval",
+      technologies: ["React.js", "Express", "MongoDB", "Node.js"],
+      icon: "💰",
+      demo: "https://github.com/sparekh14/My-Money-Tracker",
     },
     {
-      title: "Is GPT-3 Smarter Than A Sixth-Grader?",
-      category: "AI RESEARCH",
+      title: "MyPA",
+      category: "FULL STACK",
       description:
-        "Research study that evaluated the GPT-3 Davinci model's ability to answer middle school science questions from the TQA dataset using zero-shot, few-shot, and fine-tuning approaches to measure performance across different learning setups.",
-      technologies: ["Python", "GPT-3", "NLP", "pandas"],
-      icon: "🧠",
-      demo: "https://independent-project-mentorship.netlify.app/projects/12bafc1b0d40c5efca04d8d8aaef32d3ba22e042.html",
-    },
-    {
-      title: "WAR Prediction",
-      category: "MACHINE LEARNING",
-      description:
-        "Machine learning model built with Python and scikit-learn to predict 2019 MLB player Wins Above Replacement (WAR), a key metric for evaluating player value and informing team decision-making, achieving a 0.87 correlation with actual performance.",
-      technologies: ["Python", "scikit-learn", "Linear Regression"],
-      icon: "⚾",
-      demo: "https://github.com/TejSuklikar/WAR-Prediction",
-    },
-    {
-      title: "How To Get A Good Whiff",
-      category: "DATA SCIENCE",
-      description:
-        "Logistic regression model built in R to predict optimal MLB pitch locations by analyzing swing-and-miss probabilities, achieving 85% accuracy using Statcast data and visualized insights through ggplot2.",
-      technologies: ["R", "ggplot2", "dplyr"],
-      icon: "🏟️",
-      demo: "https://github.com/TejSuklikar/HowToGetAGoodWhiff/blob/main/How%20to%20get%20a%20good%20WHIFF-%20Wharton%20Moneyball%20Academy%20Presentation.pdf",
-    },
-    {
-      title: "Anti Refugee Sentiment Analysis",
-      category: "MACHINE LEARNING",
-      description:
-        "Sentiment analysis model developed in Python using NLP techniques to classify tweets as pro- or anti-refugee, achieving 92.65% accuracy through feature extraction methods like Bag of Words, Tf-idf, and Word2Vec with logistic regression.",
-      technologies: ["NLP", "Python", "scikit-learn", "TF-IDF", "Word2Vec"],
-      icon: "🐦‍⬛",
-      demo: "https://github.com/TejSuklikar/AntiRefugeeSentimentAnalysis/blob/main/Anti-Refugee%20Sentiment%20Analysis.pdf",
-    },
+        "Voice-activated personal assistant with 10+ interactive features including text-to-speech and web scraping, designed to boost user productivity and simplify task execution",
+      technologies: ["Python"],
+      icon: "🤖",
+      demo: "https://github.com/sparekh14/Hackathons/tree/main/HackDefy",
+    }
   ]
 
   const skillCategories = [
@@ -246,44 +205,45 @@ export default function Portfolio() {
       skills: [
         { name: "Java", icon: "/logos/skills/java-logo.png" },
         { name: "Python", icon: "/logos/skills/python-logo.png" },
-        { name: "JavaScript/TypeScript", icon: "/logos/skills/typescript-javascript-logo.png" },
+        { name: "Apex", icon: "/logos/skills/apex-logo.png" },
+        { name: "TypeScript + JavaScript", icon: "/logos/skills/typescript-javascript-logo.png" },
         { name: "C", icon: "/logos/skills/c-logo.png" },
-        { name: "C++", icon: "/logos/skills/cpp-logo-new.png" },
+        { name: "C++", icon: "/logos/skills/cpp-logo.png" },
         { name: "R", icon: "/logos/skills/r-logo.png" },
         { name: "SQL", icon: "/logos/skills/sql-logo.png" },
         { name: "HTML/CSS", icon: "/logos/skills/html-css-logo.png" },
-        { name: "OCaml", icon: "/logos/skills/ocaml-logo.png" },
-        { name: "Assembly", icon: "/logos/skills/assembly-logo.png" },
+        { name: "MATLAB", icon: "/logos/skills/matlab-logo.png" }
       ],
     },
     {
-      title: "Frameworks/Libraries",
+      title: "Libraries & Frameworks",
       skills: [
-        { name: "React/Svelte", icon: "/logos/skills/react-svelte-logo.png" },
+        { name: "React + React Native", icon: "/logos/skills/react-reactnative-logo.png" },
+        { name: "Spring Boot", icon: "/logos/skills/springboot-logo.png" },
         { name: "Node.js", icon: "/logos/skills/nodejs-logo.png" },
-        { name: "Express.js", icon: "/logos/skills/express-logo.png" },
-        { name: "Next.js", icon: "/logos/skills/nextjs-logo.png" },
+        { name: "Express.js", icon: "/logos/skills/expressjs-logo.png" },
         { name: "Flask", icon: "/logos/skills/flask-logo.png" },
-        { name: "scikit-learn", icon: "/logos/skills/scikit-learn-logo.png" },
-        { name: "pandas", icon: "/logos/skills/pandas-logo.png" },
-        { name: "TensorFlow", icon: "/logos/skills/tensorflow-logo.png" },
-        { name: "PyTorch", icon: "/logos/skills/pytorch-logo.png" },
+        { name: "Stripe", icon: "/logos/skills/stripe-logo.png" },
         { name: "NumPy", icon: "/logos/skills/numpy-logo.png" },
+        { name: "Pandas", icon: "/logos/skills/pandas-logo.png" },
+        { name: "JUnit", icon: "/logos/skills/junit-logo.png" },
       ],
     },
     {
-      title: "Tools/Technologies",
+      title: "Tools & Technologies",
       skills: [
         { name: "AWS", icon: "/logos/skills/aws-logo.png" },
-        { name: "Azure", icon: "/logos/skills/azure-logo.png" },
-        { name: "Docker", icon: "/logos/skills/docker-logo.png" },
-        { name: "Kubernetes", icon: "/logos/skills/kubernetes-logo.png" },
+        { name: "Salesforce", icon: "/logos/skills/salesforce-logo.png" },
+        { name: "Postman", icon: "/logos/skills/postman-logo.png" },
+        { name: "Firebase", icon: "/logos/skills/firebase-logo.png" },
+        { name: "MongoDB", icon: "/logos/skills/mongodb-logo.png" },
         { name: "MySQL", icon: "/logos/skills/mysql-logo.png" },
         { name: "PostgreSQL", icon: "/logos/skills/postgresql-logo.png" },
-        { name: "Jupyter", icon: "/logos/skills/jupyter-logo.png" },
-        { name: "MongoDB", icon: "/logos/skills/mongodb-logo.png" },
-        { name: "Linux", icon: "/logos/skills/linux-logo.png" },
         { name: "Git", icon: "/logos/skills/git-logo.png" },
+        { name: "GitHub", icon: "/logos/skills/github-logo.png" },
+        { name: "Google Suite", icon: "/logos/skills/google-suite-logo.png" },
+        { name: "Microsoft Platforms", icon: "/logos/skills/microsoft-platforms-logo.png" },
+        { name: "Linux", icon: "/logos/skills/linux-logo.png" },
       ],
     },
   ]
@@ -320,7 +280,7 @@ export default function Portfolio() {
             </h2>
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 tracking-tight font-heading">
               <span className="text-white hover:bg-gradient-to-r hover:from-green-400 hover:via-teal-400 hover:to-blue-500 hover:text-transparent hover:bg-clip-text transition-all duration-300 cursor-default">
-                I'm Tej
+                I'm Samarth
               </span>
             </h1>
             {/* Fixed height container for typewriter to prevent layout shifts and overflow */}
@@ -348,14 +308,14 @@ export default function Portfolio() {
               </button>
               <div className="flex space-x-3">
                 <button
-                  onClick={() => window.open("https://www.linkedin.com/in/tej-suklikar/", "_blank")}
+                  onClick={() => window.open("https://www.linkedin.com/in/samarth-parekh/", "_blank")}
                   className="bg-white hover:bg-gray-100 p-3 rounded-full transition-all duration-300"
                   aria-label="LinkedIn"
                 >
                   <Linkedin className="w-5 h-5 text-gray-800" />
                 </button>
                 <button
-                  onClick={() => window.open("https://github.com/TejSuklikar", "_blank")}
+                  onClick={() => window.open("https://github.com/sparekh14", "_blank")}
                   className="bg-white hover:bg-gray-100 p-3 rounded-full transition-all duration-300"
                   aria-label="GitHub"
                 >
@@ -368,8 +328,8 @@ export default function Portfolio() {
             <div className="relative">
               <div className="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-72 lg:h-72 rounded-full overflow-hidden border-4 border-white shadow-2xl">
                 <img
-                  src="/profile-photo.jpeg"
-                  alt="Tej Suklikar"
+                  src="/profile-photo.jpg"
+                  alt="Samarth Parekh"
                   className="w-full h-full object-cover"
                   style={{ objectPosition: "center 5%" }}
                 />
@@ -386,22 +346,21 @@ export default function Portfolio() {
             <span className="text-blue-300">About</span>
           </h2>
           <div className="max-w-4xl mx-auto text-center">
-            <p className="text-lg md:text-xl text-gray-300 leading-relaxed font-light mb-8">
-              I'm a Computer Science and Linguistics student at the University of Maryland, passionate about developing
-              innovative software solutions. I focus on leveraging AI, Machine Learning, and Data Science to solve
-              complex problems across various industries, and I'm eager to explore new ways these technologies can be
-              applied, uncovering creative solutions and pushing technological boundaries. Currently, I'm honing my
-              skills as a <span className="font-semibold">Software Engineering Intern</span> at{" "}
-              <span className="font-semibold">Anoki AI</span>, focusing on{" "}
-              <span className="font-semibold">Generative AI applications</span>.
-            </p>
-            <p className="text-lg md:text-xl text-gray-300 leading-relaxed font-light mb-8">
-              <span className="italic">When I'm not coding</span>, I enjoy playing soccer, golfing, working out, and
-              spending time with my dog, Beau.
-            </p>
+          <p className="text-lg md:text-xl text-gray-300 leading-relaxed font-light mb-8">
+            I am a Computer Science student at the University of Maryland with a strong interest in building impactful software
+            that solves real-world problems. My work blends Data Science, Machine Learning, and full-stack development, with a
+            growing focus on Generative AI. Currently, I am a <span className="font-semibold">Software Engineering Intern</span> at{" "}
+            the <span className="font-semibold">StoneX Group</span>, where I am utilizing Salesforce and Apex to develop a robust CRM solution.{" "}
+            <span className="font-semibold">Dash and TypeScript</span>. I also previously interned at{" "}
+            <span className="font-semibold">StoneX</span> and co-founded multiple student-led projects, including a
+            photo-sharing and scheduling platform for nonprofits.
+          </p>
+          <p className="text-lg md:text-xl text-gray-300 leading-relaxed font-light mb-8">
+            <span className="italic">Outside of tech</span>, I enjoy playing soccer, going to the gym, hanging out with friends, and reading novels. I am also a huge fan of movies and love discovering plots that stay with me.
+          </p>
             <div className="flex items-center justify-center space-x-2 text-blue-300">
               <MapPin className="w-5 h-5" />
-              <span className="font-medium text-base">San Francisco, CA</span>
+              <span className="font-medium text-base">New York, NY</span>
             </div>
           </div>
         </div>
@@ -575,7 +534,7 @@ export default function Portfolio() {
             <span className="text-blue-300">Get In Touch</span>
           </h2>
           <p className="text-lg md:text-xl text-gray-300 mb-12 max-w-2xl mx-auto font-light leading-relaxed">
-            I'm always open to discussing new opportunities, interesting projects, or just having a chat about
+            I'm always open to discussing new opportunities, interesting projects, or having a chat about
             technology. Feel free to reach out!
           </p>
           <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
@@ -583,7 +542,7 @@ export default function Portfolio() {
               variant="outline"
               size="lg"
               className="bg-white text-blue-400 hover:text-blue-500 border-none font-medium font-heading text-base flex items-center justify-center px-8 py-6 min-w-[140px]"
-              onClick={() => window.open("mailto:anitej@suklikar.org")}
+              onClick={() => window.open("mailto:parekh.samarth@gmail.com")}
             >
               <Mail className="w-5 h-5 mr-3" />
               Email Me
@@ -592,7 +551,7 @@ export default function Portfolio() {
               variant="outline"
               size="lg"
               className="bg-white text-blue-400 hover:text-blue-500 border-none font-medium font-heading text-base flex items-center justify-center px-8 py-6 min-w-[140px]"
-              onClick={() => window.open("https://www.linkedin.com/in/tej-suklikar/", "_blank")}
+              onClick={() => window.open("https://www.linkedin.com/in/samarth-parekh/", "_blank")}
             >
               <Linkedin className="w-5 h-5 mr-3" />
               LinkedIn
@@ -601,7 +560,7 @@ export default function Portfolio() {
               variant="outline"
               size="lg"
               className="bg-white text-blue-400 hover:text-blue-500 border-none font-medium font-heading text-base flex items-center justify-center px-8 py-6 min-w-[140px]"
-              onClick={() => window.open("https://github.com/TejSuklikar", "_blank")}
+              onClick={() => window.open("https://github.com/sparekh14", "_blank")}
             >
               <Github className="w-5 h-5 mr-3" />
               GitHub
@@ -614,7 +573,7 @@ export default function Portfolio() {
       <footer className="py-8 px-4 sm:px-6 lg:px-8 border-t border-blue-600/20">
         <div className="max-w-6xl mx-auto text-center text-gray-400">
           <p className="font-light text-base">
-            &copy; Tej Suklikar. All rights reserved. Built with React, Next.js, TypeScript, & Tailwind CSS
+            &copy; Samarth Parekh. All rights reserved.
           </p>
         </div>
       </footer>
