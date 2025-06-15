@@ -206,7 +206,7 @@ export default function Portfolio() {
         { name: "Java", icon: "/logos/skills/java-logo.png" },
         { name: "Python", icon: "/logos/skills/python-logo.png" },
         { name: "Apex", icon: "/logos/skills/apex-logo.png" },
-        { name: "TypeScript + JavaScript", icon: "/logos/skills/typescript-javascript-logo.png" },
+        { name: "TypeScript + JavaScript", icon: "/logos/skills/ts-js-logo.png" },
         { name: "C", icon: "/logos/skills/c-logo.png" },
         { name: "C++", icon: "/logos/skills/cpp-logo.png" },
         { name: "R", icon: "/logos/skills/r-logo.png" },
@@ -351,9 +351,6 @@ export default function Portfolio() {
             that solves real-world problems. My work blends Data Science, Machine Learning, and full-stack development, with a
             growing focus on Generative AI. Currently, I am a <span className="font-semibold">Software Engineering Intern</span> at{" "}
             the <span className="font-semibold">StoneX Group</span>, where I am utilizing Salesforce and Apex to develop a robust CRM solution.{" "}
-            <span className="font-semibold">Dash and TypeScript</span>. I also previously interned at{" "}
-            <span className="font-semibold">StoneX</span> and co-founded multiple student-led projects, including a
-            photo-sharing and scheduling platform for nonprofits.
           </p>
           <p className="text-lg md:text-xl text-gray-300 leading-relaxed font-light mb-8">
             <span className="italic">Outside of tech</span>, I enjoy playing soccer, going to the gym, hanging out with friends, and reading novels. I am also a huge fan of movies and love discovering plots that stay with me.
