@@ -33,4 +33,4 @@ I'm always open to connecting and discussing new opportunities. You can reach me
 - **Email**: [parekh.samarth@gmail.com](mailto:parekh.samarth@gmail.com)  
 - **LinkedIn**: [linkedin.com/in/samarth-parekh](linkedin.com/in/samarth-parekh)  
 - **GitHub**: [github.com/sparekh14](https://github.com/sparekh14)  
-- **Website**: []()
+- **Website**: [Personal Portfolio](https://personal-portfolio-fe80prpby-samarth-parekhs-projects.vercel.app/)
