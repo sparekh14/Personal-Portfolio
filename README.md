@@ -18,13 +18,13 @@ This site offers a comprehensive view of my professional journey and the work I 
 
 - **Frontend**: React, Next.js  
 - **Styling**: Tailwind CSS  
-- **Deployment**: Vercel 
+- **Deployment**: Netlify 
 
 ## **Skills**
 
 - **Languages**: TypeScript, JavaScript, CSS  
 - **Frameworks**: React, Next.js, Tailwind CSS  
-- **Tools**: Git, Vercel, Node.js  
+- **Tools**: Git, Netlify, Node.js  
 
 ## **Get in Touch**
 
@@ -33,4 +33,4 @@ I'm always open to connecting and discussing new opportunities. You can reach me
 - **Email**: [parekh.samarth@gmail.com](mailto:parekh.samarth@gmail.com)  
 - **LinkedIn**: [linkedin.com/in/samarth-parekh](linkedin.com/in/samarth-parekh)  
 - **GitHub**: [github.com/sparekh14](https://github.com/sparekh14)  
-- **Website**: [Personal Portfolio](https://personal-portfolio-fe80prpby-samarth-parekhs-projects.vercel.app/)
+- **Website**: [Personal Portfolio](https://fascinating-gecko-e92876.netlify.app/)
