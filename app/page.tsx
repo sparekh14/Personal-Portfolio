@@ -348,7 +348,7 @@ export default function Portfolio() {
           <div className="max-w-4xl mx-auto text-center">
           <p className="text-lg md:text-xl text-gray-300 leading-relaxed font-light mb-8">
             I am a Computer Science student at the University of Maryland with a strong interest in building impactful software
-            that solves real-world problems. My work blends Data Science, Machine Learning, and full-stack development, with a
+            that solves real-world problems. My work blends artificial intelligence and full-stack development, with a
             growing focus on Generative AI. Currently, I am a <span className="font-semibold">Software Engineering Intern</span> at{" "}
             the <span className="font-semibold">StoneX Group</span>, where I am utilizing Salesforce and Apex to develop a robust CRM solution.{" "}
           </p>
