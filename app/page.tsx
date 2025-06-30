@@ -105,7 +105,7 @@ export default function Portfolio() {
       company: "Matchrimoney",
       location: "Washington D.C.",
       period: "July 2025 - Present",
-      logo: "/logos/stonex-logo.png",
+      logo: "/logos/matchrimoney-logo.png",
       website: "",
       description: [
         "Spearheading the end-to-end development of Matchrimoney, a full-stack web platform helping couples share wedding vendor costs through intelligent matching and group buying, targeting the \$70B+ US wedding market",
