@@ -13,7 +13,7 @@ export default function Portfolio() {
   const [roleIndex, setRoleIndex] = useState(0)
 
   useEffect(() => {
-    const roles = ["Software Engineer.", "Problem-Solver.", "Full-Stack Developer.", "Critical Thinker."]
+    const roles = ["Software Engineer", "Problem-Solver", "Full-Stack Developer", "Critical Thinker"]
     const currentRole = roles[roleIndex]
 
     const timeout = setTimeout(
@@ -101,14 +101,28 @@ export default function Portfolio() {
 
   const experiences = [
     {
+      title: "Co-Founder",
+      company: "Matchrimoney",
+      location: "Washington D.C.",
+      period: "July 2025 - Present",
+      logo: "/logos/stonex-logo.png",
+      website: "",
+      description: [
+        "Spearheading the end-to-end development of Matchrimoney, a full-stack web platform helping couples share wedding vendor costs through intelligent matching and group buying, targeting the \$70B+ US wedding market",
+        "Implementing a compatibility scoring algorithm that matches users with other couples for cost-saving collaboration, increasing match accuracy and vendor coordination potential",
+        "Engineering a complete full-stack architecture using React.js, Node.js, and PostgreSQL, delivering a high-performance and secure web platform with responsive UI, validated API endpoints, and normalized relational data models"
+      ],
+    },
+    {
       title: "Software Engineer Intern",
       company: "StoneX",
       location: "New York, NY",
-      period: "Jun 2025 - Present",
+      period: "June 2025 - Present",
       logo: "/logos/stonex-logo.png",
       website: "https://www.stonex.com/en/",
       description: [
-        "CRM + Gen AI Team",
+        "Enhancing REST APIs to integrate with external applications, eliminating 40\% of post data-ingestion field updates, reducing significant manual work and ensuring seamless and accurate data access across the entire CRM platform",
+        "Developing an Outlook automation support tool utilizing Power Automate and a custom text classification model that automates classification and triage of Outlook support emails, reducing manual ticket handling by 65\%"
       ],
     },
     {
@@ -144,7 +158,7 @@ export default function Portfolio() {
       logo: "/logos/wlc-logo.png",
       website: "https://warriorslegacycare.com/",
       description: [
-        "Led a 10-member team of engineers in developing a fullstack React Native mobile application to provide essential services to veterans, including care facilities, mental health services, and veteran messaging",
+        "Led a 10-member team of engineers in developing a fullstack React Native mobile application to provide essential services to veterans, including care facilities, mental health services, and veteran messaging helping achieve \$5 million in investments",
         "Built an AI-powered resume reviewer that analyzes uploaded resumes using Google Gemini, provides tailored suggestions, and recommends roles based on user profiles, integrated with a web scraper for real-time job postings",
         "Integrated WebSockets and Geolocation to provide real-time location, user messaging, and enabling dynamic service provider mapping and appointment scheduling via RESTful APIs",
       ],
@@ -203,29 +217,25 @@ export default function Portfolio() {
     {
       title: "Languages",
       skills: [
-        { name: "Java", icon: "/logos/skills/java-logo.png" },
         { name: "Python", icon: "/logos/skills/python-logo.png" },
+        { name: "Java", icon: "/logos/skills/java-logo.png" },
         { name: "Apex", icon: "/logos/skills/apex-logo.png" },
         { name: "TypeScript + JavaScript", icon: "/logos/skills/ts-js-logo.png" },
-        { name: "C", icon: "/logos/skills/c-logo.png" },
-        { name: "C++", icon: "/logos/skills/cpp-logo.png" },
-        { name: "R", icon: "/logos/skills/r-logo.png" },
-        { name: "SQL", icon: "/logos/skills/sql-logo.png" },
         { name: "HTML/CSS", icon: "/logos/skills/html-css-logo.png" },
-        { name: "MATLAB", icon: "/logos/skills/matlab-logo.png" }
+        { name: "C", icon: "/logos/skills/c-logo.png" },
+        { name: "MATLAB", icon: "/logos/skills/matlab-logo.png" },
+        { name: "SQL", icon: "/logos/skills/sql-logo.png" },
       ],
     },
     {
       title: "Libraries & Frameworks",
       skills: [
         { name: "React + React Native", icon: "/logos/skills/react-reactnative-logo.png" },
-        { name: "Spring Boot", icon: "/logos/skills/springboot-logo.png" },
         { name: "Node.js", icon: "/logos/skills/nodejs-logo.png" },
         { name: "Express.js", icon: "/logos/skills/expressjs-logo.png" },
-        { name: "Flask", icon: "/logos/skills/flask-logo.png" },
+        { name: "Spring Boot", icon: "/logos/skills/springboot-logo.png" },
         { name: "Stripe", icon: "/logos/skills/stripe-logo.png" },
-        { name: "NumPy", icon: "/logos/skills/numpy-logo.png" },
-        { name: "Pandas", icon: "/logos/skills/pandas-logo.png" },
+        { name: "Clerk.js", icon: "/logos/skills/clerkjs-logo.png" },
         { name: "JUnit", icon: "/logos/skills/junit-logo.png" },
       ],
     },
@@ -234,15 +244,16 @@ export default function Portfolio() {
       skills: [
         { name: "AWS", icon: "/logos/skills/aws-logo.png" },
         { name: "Salesforce", icon: "/logos/skills/salesforce-logo.png" },
+        { name: "Git", icon: "/logos/skills/git-logo.png" },
+        { name: "GitHub", icon: "/logos/skills/github-logo.png" },
         { name: "Postman", icon: "/logos/skills/postman-logo.png" },
         { name: "Firebase", icon: "/logos/skills/firebase-logo.png" },
         { name: "MongoDB", icon: "/logos/skills/mongodb-logo.png" },
         { name: "MySQL", icon: "/logos/skills/mysql-logo.png" },
         { name: "PostgreSQL", icon: "/logos/skills/postgresql-logo.png" },
-        { name: "Git", icon: "/logos/skills/git-logo.png" },
-        { name: "GitHub", icon: "/logos/skills/github-logo.png" },
         { name: "Google Suite", icon: "/logos/skills/google-suite-logo.png" },
         { name: "Microsoft Platforms", icon: "/logos/skills/microsoft-platforms-logo.png" },
+        { name: "Jira", icon: "/logos/skills/jira-logo.png" },
         { name: "Linux", icon: "/logos/skills/linux-logo.png" },
       ],
     },
@@ -294,7 +305,7 @@ export default function Portfolio() {
                   </span>
                   {/* Invisible text to reserve space for longest text */}
                   <span className="absolute top-0 left-0 text-transparent pointer-events-none whitespace-nowrap opacity-0">
-                    Full-Stack Developer.
+                    Full-Stack Developer
                   </span>
                 </div>
               </div>
