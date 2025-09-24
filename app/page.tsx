@@ -161,7 +161,7 @@ export default function Portfolio() {
       technologies: ["React.js", "Node.js", "PostgreSQL"],
       icon: "💍",
       demo: "https://github.com/sparekh14/Matchrimoney",
-    }
+    },
     {
       title: "EcoNavix",
       category: "AI",
