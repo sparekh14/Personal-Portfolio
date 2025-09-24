@@ -154,6 +154,15 @@ export default function Portfolio() {
 
   const projects = [
     {
+      title: "Matchrimoney",
+      category: "FULL STACK",
+      description:
+        "A full-stack web platform helping couples share wedding vendor costs through intelligent matching and group buying, targeting the \$70B+ US wedding market",
+      technologies: ["React.js", "Node.js", "PostgreSQL"],
+      icon: "💍",
+      demo: "https://github.com/sparekh14/Matchrimoney",
+    }
+    {
       title: "EcoNavix",
       category: "AI",
       description:
