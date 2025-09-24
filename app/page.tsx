@@ -101,23 +101,10 @@ export default function Portfolio() {
 
   const experiences = [
     {
-      title: "Co-Founder",
-      company: "Matchrimoney",
-      location: "Washington D.C.",
-      period: "July 2025 - Present",
-      logo: "/logos/matchrimoney-logo.png",
-      website: "",
-      description: [
-        "Spearheading the end-to-end development of Matchrimoney, a full-stack web platform helping couples share wedding vendor costs through intelligent matching and group buying, targeting the \$70B+ US wedding market",
-        "Implementing a compatibility scoring algorithm that matches users with other couples for cost-saving collaboration, increasing match accuracy and vendor coordination potential",
-        "Engineering a complete full-stack architecture using React.js, Node.js, and PostgreSQL, delivering a high-performance and secure web platform with responsive UI, validated API endpoints, and normalized relational data models"
-      ],
-    },
-    {
       title: "Software Engineer Intern",
       company: "StoneX",
       location: "New York, NY",
-      period: "June 2025 - Present",
+      period: "June 2025 - August 2025",
       logo: "/logos/stonex-logo.png",
       website: "https://www.stonex.com/en/",
       description: [
