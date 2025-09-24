@@ -108,8 +108,9 @@ export default function Portfolio() {
       logo: "/logos/stonex-logo.png",
       website: "https://www.stonex.com/en/",
       description: [
-        "Enhancing REST APIs to integrate with external applications, eliminating 40\% of post data-ingestion field updates, reducing significant manual work and ensuring seamless and accurate data access across the entire CRM platform",
-        "Developing an Outlook automation support tool utilizing Power Automate and a custom text classification model that automates classification and triage of Outlook support emails, reducing manual ticket handling by 65\%"
+        "Reduced post-ingestion field updates by 40% by designing and developing REST API enhancements that integrated external applications with Salesforce, minimizing manual corrections and increasing CRM data reliability",
+        "Cut manual ticket handling by 65% by developing an Outlook automation tool with Power Automate and a custom text-classification model, accelerating ticket triage and increasing support throughput",
+        "Increased CRM operational efficiency and data accuracy across multiple regions by collaborating with cross-functional global teams to optimize BAU workflows and user interfaces, resulting in streamlined procedures and boosted user adoption"
       ],
     },
     {
@@ -120,8 +121,9 @@ export default function Portfolio() {
       logo: "/logos/ionq-logo.png",
       website: "https://ionq.com/",
       description: [
-        "Developed hybrid quantum-classical machine learning algorithms for image classification by leveraging IonQ’s Aria and ForteQPUs to compare the efficiency of classical and quantum models on the MNIST dataset",
-        "Optimized feature reduction techniques for quantum machine learning, enabling improved performance of quantum support vector machines and generative adversarial networks on resource-limited quantum processors",
+        "Benchmarked classical vs. hybrid quantum-classical models on MNIST by executing circuits on IonQ Aria and Forte quantum computers, delivering insights for model selection on resource-constrained quantum hardware",
+        "Increased efficiency of quantum SVMs and GANs on limited-qubit QPUs by designing optimized feature-reduction pipelines, reducing qubit requirements while improving classification accuracy",
+        "Investigated quantum-enhanced approaches for analyzing neural spike trains, studying higher-order correlations and connectivity models to evaluate potential quantum advantages in neuroscience applications"
       ],
     },
     {
@@ -132,9 +134,9 @@ export default function Portfolio() {
       logo: "/logos/fda-logo.png",
       website: "https://jifsan.umd.edu/news/view/102",
       description: [
-        "Designed and implemented a Python/Dash synthetic-data generator to aid in streamlining the data generation and testing process, reducing manual test-data prep time by 30%",
-        "Authored detailed system and API documentation for global engineering teams of an open-source tool to enable global agencies to address traceability concerns, achieving a reduction in manual labor across 10+ international organizations",
-        "Presented a poster to 200+ people at the FDA Foods Program Regulatory Science Conference to highlight the current effort and innovative approach in enhancing global traceability efforts through open-source collaboration",
+        "Lowered manual test-data preparation time by 30% by designing and implementing a Python/Dash synthetic-data generator, accelerating testing cycles and improving developer productivity",
+        "Enabled traceability adoption across 10+ international organizations by authoring comprehensive system and API documentation for an open-source tool, reducing manual effort and easing integration",
+        "Increased tech-enabled food traceability initiative visibility by presenting a poster to 200+ attendees at the FDA Foods Program Regulatory Science Conference, sparking new collaboration opportunities"
       ],
     },
     {
@@ -145,14 +147,23 @@ export default function Portfolio() {
       logo: "/logos/wlc-logo.png",
       website: "https://warriorslegacycare.com/",
       description: [
-        "Led a 10-member team of engineers in developing a fullstack React Native mobile application to provide essential services to veterans, including care facilities, mental health services, and veteran messaging helping achieve \$5 million in investments",
-        "Built an AI-powered resume reviewer that analyzes uploaded resumes using Google Gemini, provides tailored suggestions, and recommends roles based on user profiles, integrated with a web scraper for real-time job postings",
-        "Integrated WebSockets and Geolocation to provide real-time location, user messaging, and enabling dynamic service provider mapping and appointment scheduling via RESTful APIs",
+        "Secured $5M in funding from government grants and stakeholders by leading a 10-member engineering team to design and launch a React Native app, providing veterans with access to care facilities, mental health resources, and secure messaging",
+        "Improved veteran job-search support by developing an AI-powered resume reviewer with Google Gemini and a real-time job-posting scraper, delivering tailored recommendations",
+        "Enhanced real-time service delivery for veterans by integrating WebSockets, geolocation, and REST APIs to enable live messaging, dynamic provider mapping, and appointment scheduling, reducing friction in accessing care",
       ],
     }
   ]
 
   const projects = [
+    {
+      title: "Tributum",
+      category: "FULL STACK",
+      description:
+        "A full-stack web app for analyzing and visualizing US tariff and trade data, combining a Python data pipeline with a Next.js frontend",
+      technologies: ["Next.js", "Supabase", "Python", "OpenAI"],
+      icon: "📉",
+      demo: "https://github.com/sachinkumar25/tributum",
+    },
     {
       title: "Matchrimoney",
       category: "FULL STACK",
