@@ -102,6 +102,19 @@ export default function Portfolio() {
   const experiences = [
     {
       title: "Software Engineer Intern",
+      company: "Stripe",
+      location: "Seattle, WA",
+      period: "May 2026 - August 2026",
+      logo: "/logos/stripe-logo.webp",
+      website: "https://stripe.com/",
+      description: [
+        "Engineered an automated testing framework in Ruby that validated over 24,000 unique combinations of merchant states and dashboard surfaces, preventing a recurring class of critical production incidents that had blocked dozens of global merchants from their finances",
+        "Architected and led the consolidation of 29 dynamic UI widgets into a unified React/TypeScript library, enabling seamless code reuse and a consistent user experience across multiple high-traffic dashboard surfaces",
+        "Increased CRM operational efficiency and data accuracy across multiple regions by collaborating with cross-functional global teams to optimize BAU workflows and user interfaces, resulting in streamlined procedures and boosted user adoption"
+      ],
+    },
+    {
+      title: "Software Engineer Intern",
       company: "StoneX",
       location: "New York, NY",
       period: "June 2025 - August 2025",
